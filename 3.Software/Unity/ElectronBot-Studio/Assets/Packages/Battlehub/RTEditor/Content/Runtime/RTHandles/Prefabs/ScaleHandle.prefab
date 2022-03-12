@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3800740545066089881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5601095128738636516}
+  - component: {fileID: 1743913949028103085}
+  m_Layer: 0
+  m_Name: ScaleHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5601095128738636516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800740545066089881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743913949028103085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800740545066089881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d451d0f67a9a1044a90064b872cd0f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_window: {fileID: 0}
+  HightlightOnHover: 1
+  HitTester: {fileID: 0}
+  Appearance: {fileID: 0}
+  Model: {fileID: 4363, guid: d3fd87b8a132d624f846fd97fbb89c85, type: 3}
+  m_targets: []
+  BeforeDrag:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Battlehub.RTHandles.BaseHandleUnityEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Drop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Battlehub.RTHandles.BaseHandleUnityEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  AbsouluteGrid: 0
+  GridSize: 0.1
+  MinScale: {x: -3.4028235e+38, y: -3.4028235e+38, z: -3.4028235e+38}

@@ -1,0 +1,9 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Combobox for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:ComboboxClass} : UIWidgets.ComboboxCustom<{0:ListViewClass}, {0:ListViewComponentClass}, {0:SourceClass}>
+	{{
+	}}
+}}

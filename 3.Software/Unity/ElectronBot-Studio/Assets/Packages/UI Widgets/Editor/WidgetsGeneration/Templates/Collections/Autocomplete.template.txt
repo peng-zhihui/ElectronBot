@@ -1,0 +1,38 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Autocomplete for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:AutocompleteClass} : UIWidgets.AutocompleteCustom<{0:SourceClass}, {0:ListViewComponentClass}, {0:ListViewClass}>
+	{{
+		/// <summary>
+		/// Determines whether the beginning of value matches the Query.
+		/// </summary>
+		/// <param name="value">Value.</param>
+		/// <returns>true if beginning of value matches the Input; otherwise, false.</returns>
+		public override bool Startswith({0:SourceClass} value)
+		{{
+			return UIWidgets.UtilitiesCompare.StartsWith(value.{0:AutocompleteField}, Query, CaseSensitive);
+		}}
+
+		/// <summary>
+		/// Returns a value indicating whether Query occurs within specified value.
+		/// </summary>
+		/// <param name="value">Value.</param>
+		/// <returns>true if the Query occurs within value parameter; otherwise, false.</returns>
+		public override bool Contains({0:SourceClass} value)
+		{{
+			return UIWidgets.UtilitiesCompare.Contains(value.{0:AutocompleteField}, Query, CaseSensitive);
+		}}
+
+		/// <summary>
+		/// Convert value to string.
+		/// </summary>
+		/// <returns>The string value.</returns>
+		/// <param name="value">Value.</param>
+		protected override string GetStringValue({0:SourceClass} value)
+		{{
+			return value.{0:AutocompleteField};
+		}}
+	}}
+}}

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2f0759f7ad84b5e4b96b30ea145b861c
+labels:
+- ComboboxEnum
+- UiwidgetsComboboxEnumMultiselectPrefab
+- UiwidgetsPrefab
+- Combobox
+- Multiselect
+timeCreated: 1630175234
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

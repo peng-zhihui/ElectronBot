@@ -1,0 +1,9 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// TreeGraph for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TreeGraphClass} : UIWidgets.TreeGraphCustom<{0:SourceClass}, {0:TreeGraphComponentClass}>
+	{{
+	}}
+}}

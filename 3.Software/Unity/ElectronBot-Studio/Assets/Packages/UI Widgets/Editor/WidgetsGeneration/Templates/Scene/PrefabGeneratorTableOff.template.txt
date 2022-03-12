@@ -1,0 +1,21 @@
+﻿#if UNITY_EDITOR
+namespace {0:WidgetsNamespace}
+{{
+	public partial class {0:PrefabGeneratorClass} : UIWidgets.WidgetGeneration.PrefabGenerator
+	{{
+		void GenerateSceneTable({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper, {0:ListViewComponentClass} dragInfo)
+		{{
+			AddLabel(helper.LabelTable, "Table requires at least one field or property of the printable type.");
+		}}
+
+		/// <summary>
+		/// Generate Table.
+		/// </summary>
+		/// <returns>Table.</returns>
+		protected override UnityEngine.GameObject GenerateTable()
+		{{
+			return null;
+		}}
+	}}
+}}
+#endif

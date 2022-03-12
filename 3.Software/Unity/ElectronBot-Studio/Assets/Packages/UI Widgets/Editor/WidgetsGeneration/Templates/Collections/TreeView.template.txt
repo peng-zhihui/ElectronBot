@@ -1,0 +1,9 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// TreeView for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TreeViewClass} : UIWidgets.TreeViewCustom<{0:TreeViewComponentClass}, {0:SourceClass}>
+	{{
+	}}
+}}

@@ -1,0 +1,9 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Picker from ListView for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:PickerListViewClass} : UIWidgets.PickerListViewCustom<{0:ListViewClass}, {0:ListViewComponentClass}, {0:SourceClass}, {0:PickerListViewClass}>
+	{{
+	}}
+}}

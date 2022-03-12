@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ffc9d4f678be1254aaf56d6628a6c1f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Cursors: {instanceID: 0}
+  - CursorEWTexture: {instanceID: 0}
+  - CursorNSTexture: {instanceID: 0}
+  - CursorNESWTexture: {instanceID: 0}
+  - CursorNWSETexture: {instanceID: 0}
+  - DefaultCursorTexture: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

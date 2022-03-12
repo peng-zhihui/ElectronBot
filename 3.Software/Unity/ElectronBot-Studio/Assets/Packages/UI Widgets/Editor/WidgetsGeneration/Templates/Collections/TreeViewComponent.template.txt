@@ -1,0 +1,93 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// TreeView component for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TreeViewComponentClass} : UIWidgets.TreeViewComponentBase<{0:SourceClass}>
+	{{
+		/// <summary>
+		/// Init graphics foreground.
+		/// </summary>
+		protected override void GraphicsForegroundInit()
+		{{
+			if (GraphicsForegroundVersion == 0)
+			{{
+				Foreground = new UnityEngine.UI.Graphic[] {{ {0:TextFields@UIWidgets.UtilitiesUI.GetGraphic([0:WidgetFieldName]), } }};
+				if (!UIWidgets.UtilitiesCollections.AllNull(Foreground))
+				{{
+					GraphicsForegroundVersion = 1;
+				}}
+			}}
+		}}
+{0:TreeViewFields@
+		/// <summary>
+		/// The [0:FieldName].
+		/// </summary>
+		public [0:WidgetClass] [0:WidgetFieldName];
+}
+		{0:SourceClass} item;
+
+		/// <summary>
+		/// Gets or sets the item.
+		/// </summary>
+		/// <value>The item.</value>
+		public {0:SourceClass} Item
+		{{
+			get
+			{{
+				return item;
+			}}
+
+			set
+			{{
+				item = value;
+
+				UpdateView();
+			}}
+		}}
+
+		/// <summary>
+		/// Sets the data.
+		/// </summary>
+		/// <param name="node">Node.</param>
+		/// <param name="depth">Depth.</param>
+		public override void SetData(UIWidgets.TreeNode<{0:SourceClass}> node, int depth)
+		{{
+			Node = node;
+
+			base.SetData(Node, depth);
+
+			Item = (Node == null) ? null : Node.Item;
+		}}
+
+		/// <summary>
+		/// Updates the view.
+		/// </summary>
+		protected virtual void UpdateView()
+		{{{0:Fields@
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = Item.[0:FieldName][0:FieldFormat];
+			]]
+}{0:ImageFieldsNullable@
+			// set transparent color if no icon
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].color = ([0:WidgetFieldName].[0:WidgetValueField] == null) ? UnityEngine.Color.clear : UnityEngine.Color.white;
+			]]
+}
+		}}
+
+		/// <summary>
+		/// Called when item moved to cache, you can use it free used resources.
+		/// </summary>
+		public override void MovedToCache()
+		{{{0:ImageFieldsNullable@
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = null;
+			]]
+}
+		}}
+	}}
+}}

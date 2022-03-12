@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 35003b357f0f709418674f33a0993833
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - AllowDropCursor: {fileID: 2800000, guid: 2b808f7c3d6a24b4885fde391543fe58, type: 3}
+  - DeniedDropCursor: {fileID: 2800000, guid: 7200c69591c3f4144ac09f5347b5e18d, type: 3}
+  - DefaultCursorTexture: {instanceID: 0}
+  - handle: {instanceID: 0}
+  - Prefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

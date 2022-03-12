@@ -1,0 +1,20 @@
+#if UIWIDGETS_DATABIND_SUPPORT
+namespace {0:Namespace}
+{{
+	using Slash.Unity.DataBind.Foundation.Setters;
+	using UnityEngine;
+
+	/// <summary>
+	/// Set the {0:FieldName} of a {0:TargetShortName} depending on the {0:FieldType} data value.
+	/// </summary>
+	[AddComponentMenu("Data Bind/New UI Widgets/Setters/[DB] {0:TargetShortName} {0:FieldName} Setter")]
+	public class {0:TargetShortName}{0:FieldName}Setter : ComponentSingleSetter<{0:TargetFullName}, {0:FieldType}>
+	{{
+		/// <inheritdoc />
+		protected override void UpdateTargetValue({0:TargetFullName} target, {0:FieldType} value)
+		{{
+			target.{0:FieldName} = value;
+		}}
+	}}
+}}
+#endif

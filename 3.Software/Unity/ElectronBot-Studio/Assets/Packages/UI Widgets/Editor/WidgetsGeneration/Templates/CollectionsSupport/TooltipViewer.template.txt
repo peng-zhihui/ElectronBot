@@ -1,0 +1,9 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// {0:TooltipClass} viewer.
+	/// </summary>
+	public class {0:TooltipViewerClass} : UIWidgets.TooltipViewer<{0:SourceClass}, {0:TooltipClass}>
+	{{
+	}}
+}}

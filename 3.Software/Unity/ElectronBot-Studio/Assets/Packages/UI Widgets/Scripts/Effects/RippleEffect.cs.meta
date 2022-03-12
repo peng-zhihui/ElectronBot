@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2e809996034eec54a935bfb44526da2a
+timeCreated: 1603314928
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EffectShader: {fileID: 4800000, guid: 6536b9e20fbec774693056dda62e7a27, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

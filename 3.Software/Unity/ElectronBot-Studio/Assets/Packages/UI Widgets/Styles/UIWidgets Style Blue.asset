@@ -1,0 +1,3821 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6068bbda50527f419fe2c3a5af4d62b, type: 3}
+  m_Name: UIWidgets Style Blue
+  m_EditorClassIdentifier: 
+  Default: 0
+  Fast:
+    ColorPrimary: {r: 0, g: .650980413, b: .968627453, a: 1}
+    ColorSecondary: {r: 0, g: 0, b: 0, a: 1}
+    ColorBackground: {r: 1, g: 1, b: 1, a: 1}
+    ColorHighlightedBackground: {r: 0, g: .454901963, b: .674509823, a: 1}
+    ColorSelectedBackground: {r: .0392156877, g: .686274529, b: 1, a: 1}
+    ColorDisabled: {r: .783999979, g: .783999979, b: .783999979, a: 1}
+    ColorCalendarWeekend: {r: 0, g: .113725491, b: .972549021, a: 1}
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    BackgroundHightlighted:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    CollectionsItemBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Arrow:
+      Sprite: {fileID: 21300000, guid: 599628cb8dbf0e846b59ec27fda3380c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 1
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Font: {fileID: 0}
+    FontTMPro: {fileID: 0}
+    Button:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ButtonClose:
+      Sprite: {fileID: 21300000, guid: d7d7fdae3359f39468466b62d17748b2, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 1
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ButtonPause:
+      Sprite: {fileID: 21300000, guid: 2d3e2f9d30b3aba4bb8b164f68eed8a5, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 1
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ButtonArrowDown:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 1
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ButtonArrowUp:
+      Sprite: {fileID: 21300000, guid: 4fa5c0cfb357cae409512ca90951daaa, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 1
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ScrollbarHorizontal:
+      Background:
+        Sprite: {fileID: 21300000, guid: d734d34f9d1775048992f363c3b8e8de, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Handle:
+        Sprite: {fileID: 21300000, guid: 3bd3e729ba1d3c347b460ac948c0a3b0, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ScrollbarVertical:
+      Background:
+        Sprite: {fileID: 21300000, guid: 6914e4c3271e398438bd8da65de0eb5d, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Handle:
+        Sprite: {fileID: 21300000, guid: d29a415a37e8e724d9feb6c8ecaed85f, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ProgressbarDeterminate:
+      Background:
+        Sprite: {fileID: 0}
+        Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 21300000, guid: e294d5a5b96225442ba1497ea4b4f16d, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 3
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 0
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ProgressbarIndeterminate:
+      Background:
+        Texture: {fileID: 2800000, guid: 438cffca1adbf104088c27cd8fe431c9, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        Material: {fileID: 0}
+        UVRect:
+          serializedVersion: 2
+          x: 1
+          y: 0
+          width: 4
+          height: 1
+      Border:
+        Sprite: {fileID: 21300000, guid: e294d5a5b96225442ba1497ea4b4f16d, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    TabContentBackground:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    TabTopInactive:
+      Background:
+        Sprite: {fileID: 21300000, guid: 17869cd2e1f71f14dbdd7afeef93f6b6, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    TabTopActive:
+      Background:
+        Sprite: {fileID: 21300000, guid: b3589d68455855f4d8ff20ec7a71e67d, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    TabLeftInactive:
+      Background:
+        Sprite: {fileID: 21300000, guid: 56441aa8e0a31f04598bf0920e58d17b, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    TabLeftActive:
+      Background:
+        Sprite: {fileID: 21300000, guid: c7aa3231a48397c4cb159dc860ad53b1, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    DialogDelimiter:
+      Sprite: {fileID: 21300000, guid: c7e96bec8355ba94c8fd85674c15928c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    TooltipBackground:
+      Sprite: {fileID: 21300000, guid: 59235cae37283484bbb8cdeeb6b7943a, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Checkmark:
+      Sprite: {fileID: 21300000, guid: f3bbe763c6d672046b9f2b7d65c3564b, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 1
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Collections:
+    DefaultColor: {r: 0, g: .650980413, b: .968627453, a: 1}
+    DefaultBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+    HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    HighlightedBackgroundColor: {r: 0, g: .454901963, b: .674509823, a: 1}
+    SelectedColor: {r: 0, g: 0, b: 0, a: 1}
+    SelectedBackgroundColor: {r: .0392156877, g: .686274529, b: 1, a: 1}
+    DisabledColor: {r: .783999979, g: .783999979, b: .783999979, a: 1}
+    FadeDuration: .300000012
+    MainBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Viewport:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    DefaultItemBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    DefaultItemText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  TreeView:
+    PaddingPerLevel: 30
+    Toggle:
+      Sprite: {fileID: 21300000, guid: 599628cb8dbf0e846b59ec27fda3380c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    OnNodeExpand: 0
+    AnimateArrow: 0
+    NodeOpened: {fileID: 0}
+    NodeClosed: {fileID: 0}
+  Combobox:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    SingleInputBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    SingleDefaultItemBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    SingleDefaultItemText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    MultipleInputBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    MultipleDefaultItemBackground:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    MultipleDefaultItemText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Input:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Placeholder:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ToggleButton:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    RemoveBackground:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    RemoveText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Table:
+    Border:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Background:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HeaderText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  FileListView:
+    ButtonToggle:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ButtonUp:
+      Sprite: {fileID: 21300000, guid: 4fa5c0cfb357cae409512ca90951daaa, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    PathItemBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    PathItemText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  IOCollectionsErrors:
+    ChangeFont: 1
+    Font: {fileID: 0}
+    FontTMPro: {fileID: 0}
+    ChangeFontStyle: 0
+    FontStyle: 0
+    ChangeSize: 0
+    Size: 18
+    ChangeLineSpacing: 0
+    LineSpacing: 1
+    ChangeRichText: 0
+    RichText: 1
+    ChangeAlignment: 0
+    Alignment: 0
+    ChangeHorizontalOverflow: 0
+    HorizontalOverflow: 0
+    ChangeVerticalOverflow: 0
+    VerticalOverflow: 0
+    ChangeBestFit: 0
+    BestFit: 0
+    MinSize: 10
+    MaxSize: 40
+    ChangeColor: 1
+    Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+    ChangeMaterial: 0
+    Material: {fileID: 0}
+  Accordion:
+    ToggleBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ToggleText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ContentBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ContentText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  TabsTop:
+    DefaultButton:
+      Background:
+        Sprite: {fileID: 21300000, guid: 17869cd2e1f71f14dbdd7afeef93f6b6, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ActiveButton:
+      Background:
+        Sprite: {fileID: 21300000, guid: b3589d68455855f4d8ff20ec7a71e67d, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ContentBackground:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  TabsLeft:
+    DefaultButton:
+      Background:
+        Sprite: {fileID: 21300000, guid: 56441aa8e0a31f04598bf0920e58d17b, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ActiveButton:
+      Background:
+        Sprite: {fileID: 21300000, guid: c7aa3231a48397c4cb159dc860ad53b1, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    ContentBackground:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Dialog:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Title:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ContentBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ContentText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Delimiter:
+      Sprite: {fileID: 21300000, guid: c7e96bec8355ba94c8fd85674c15928c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Button:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+  Notify:
+    Background:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Autocomplete:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    InputField:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Placeholder:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  ButtonBig:
+    Background:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Mask:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Border:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 0}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Image:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  ButtonSmall:
+    Background:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Mask:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Border:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 0}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Image:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Calendar:
+    CurrentDate:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    CurrentMonth:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    PrevMonth:
+      Sprite: {fileID: 21300000, guid: 4fa5c0cfb357cae409512ca90951daaa, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    NextMonth:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    DayOfWeekBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    DayOfWeekText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    DaysBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    DayBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    SelectedDayBackground: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c,
+      type: 3}
+    DayText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ColorSelectedDay: {r: 0, g: .650980413, b: .968627453, a: 1}
+    ColorWeekend: {r: 0, g: .113725491, b: .972549021, a: 1}
+    ColorCurrentMonth: {r: 0, g: .650980413, b: .968627453, a: 1}
+    ColorOtherMonth: {r: .783999979, g: .783999979, b: .783999979, a: 1}
+  Scroller:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Highlight:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  CenteredSliderHorizontal:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    UsableRange:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Fill:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  CenteredSliderVertical:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    UsableRange:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Fill:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  ColorPicker:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    PaletteToggle:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    PaletteBorder:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    PaletteCursor:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    SliderVerticalHandle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    SliderHorizontalHandle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    InputToggle:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    InputChannelLabel:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    InputSpinner:
+      Background:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      InputBackground:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      InputText:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      InputPlaceholder:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      ButtonPlus:
+        Sprite: {fileID: 21300000, guid: 4fa5c0cfb357cae409512ca90951daaa, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      ButtonMinus:
+        Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    HexInputBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HexInputText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    HexInputPlaceholder:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  ColorPickerRangeHorizontal:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  ColorPickerRangeVertical:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  RangeSliderHorizontal:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    UsableRange:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Fill:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HandleMin:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HandleMinTransition: 2
+    HandleMinColors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+      m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+      m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+      m_ColorMultiplier: 1
+      m_FadeDuration: .100000001
+    HandleMinSprites:
+      m_HighlightedSprite: {fileID: 0}
+      m_PressedSprite: {fileID: 0}
+      m_DisabledSprite: {fileID: 0}
+    HandleMinAnimation:
+      m_NormalTrigger: Normal
+      m_HighlightedTrigger: Highlighted
+      m_PressedTrigger: Pressed
+      m_DisabledTrigger: Disabled
+    HandleMax:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HandleMaxTransition: 2
+    HandleMaxColors:
+      m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+      m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+      m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+      m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+      m_ColorMultiplier: 0
+      m_FadeDuration: 0
+    HandleMaxSprites:
+      m_HighlightedSprite: {fileID: 0}
+      m_PressedSprite: {fileID: 0}
+      m_DisabledSprite: {fileID: 0}
+    HandleMaxAnimation:
+      m_NormalTrigger: Normal
+      m_HighlightedTrigger: Highlighted
+      m_PressedTrigger: Pressed
+      m_DisabledTrigger: Disabled
+  RangeSliderVertical:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    UsableRange:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Fill:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HandleMin:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HandleMinTransition: 2
+    HandleMinColors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+      m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+      m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+      m_ColorMultiplier: 1
+      m_FadeDuration: .100000001
+    HandleMinSprites:
+      m_HighlightedSprite: {fileID: 0}
+      m_PressedSprite: {fileID: 0}
+      m_DisabledSprite: {fileID: 0}
+    HandleMinAnimation:
+      m_NormalTrigger: Normal
+      m_HighlightedTrigger: Highlighted
+      m_PressedTrigger: Pressed
+      m_DisabledTrigger: Disabled
+    HandleMax:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    HandleMaxTransition: 2
+    HandleMaxColors:
+      m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+      m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+      m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+      m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+      m_ColorMultiplier: 0
+      m_FadeDuration: 0
+    HandleMaxSprites:
+      m_HighlightedSprite: {fileID: 0}
+      m_PressedSprite: {fileID: 0}
+      m_DisabledSprite: {fileID: 0}
+    HandleMaxAnimation:
+      m_NormalTrigger: Normal
+      m_HighlightedTrigger: Highlighted
+      m_PressedTrigger: Pressed
+      m_DisabledTrigger: Disabled
+  Spinner:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    InputBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    InputText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    InputPlaceholder:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: .783999979, g: .783999979, b: .783999979, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ButtonPlus:
+      Sprite: {fileID: 21300000, guid: 4fa5c0cfb357cae409512ca90951daaa, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ButtonMinus:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Switch:
+    Border:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    BackgroundDefault:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    BackgroundOnColor: {r: 0, g: 0, b: 0, a: 1}
+    BackgroundOffColor: {r: 0, g: 0, b: 0, a: 1}
+    MarkDefault:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    MarkOnColor: {r: 0, g: .650980413, b: .968627453, a: 1}
+    MarkOffColor: {r: .783999979, g: .783999979, b: .783999979, a: 1}
+  Time:
+    InputBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    InputText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ButtonIncrease:
+      Sprite: {fileID: 21300000, guid: 4fa5c0cfb357cae409512ca90951daaa, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ButtonDecrease:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    AMPMBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    AMPMText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  AudioPlayer:
+    Progress:
+      Background:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Fill:
+        Sprite: {fileID: 0}
+        Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Handle:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    Play:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 21300000, guid: 599628cb8dbf0e846b59ec27fda3380c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    Pause:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 21300000, guid: 2d3e2f9d30b3aba4bb8b164f68eed8a5, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 0
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    Stop:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+    Toggle:
+      Background:
+        Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Mask:
+        Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Border:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 0}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+      Text:
+        ChangeFont: 1
+        Font: {fileID: 0}
+        FontTMPro: {fileID: 0}
+        ChangeFontStyle: 0
+        FontStyle: 0
+        ChangeSize: 0
+        Size: 18
+        ChangeLineSpacing: 0
+        LineSpacing: 1
+        ChangeRichText: 0
+        RichText: 1
+        ChangeAlignment: 0
+        Alignment: 0
+        ChangeHorizontalOverflow: 0
+        HorizontalOverflow: 0
+        ChangeVerticalOverflow: 0
+        VerticalOverflow: 0
+        ChangeBestFit: 0
+        BestFit: 0
+        MinSize: 10
+        MaxSize: 40
+        ChangeColor: 1
+        Color: {r: 0, g: 0, b: 0, a: 1}
+        ChangeMaterial: 0
+        Material: {fileID: 0}
+      Image:
+        Sprite: {fileID: 0}
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        ImageType: 1
+        PreserveAspect: 0
+        FillCenter: 1
+        FillMethod: 4
+        FillOrigin: 0
+        FillAmount: 0
+        FillClockwise: 1
+        Material: {fileID: 0}
+  ProgressbarDeterminate:
+    FullbarImage:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    FullbarMask:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 3
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 0
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    FullbarBorder:
+      Sprite: {fileID: 21300000, guid: e294d5a5b96225442ba1497ea4b4f16d, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    EmptyBar:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    EmptyBarText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    FullBarText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  ProgressbarIndeterminate:
+    Texture:
+      Texture: {fileID: 2800000, guid: 438cffca1adbf104088c27cd8fe431c9, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      Material: {fileID: 0}
+      UVRect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 4
+        height: 1
+    Mask:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Border:
+      Sprite: {fileID: 21300000, guid: e294d5a5b96225442ba1497ea4b4f16d, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Tooltip:
+    Background:
+      Sprite: {fileID: 21300000, guid: 59235cae37283484bbb8cdeeb6b7943a, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Paginator:
+    DefaultBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    DefaultText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    ActiveBackground:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ActiveText:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  ButtonClose:
+    Background:
+      Sprite: {fileID: 21300000, guid: d7d7fdae3359f39468466b62d17748b2, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Sidebar:
+    Background:
+      Sprite: {fileID: 21300000, guid: 3baee31059d45d848b5931d12b449e8c, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Canvas:
+    Background:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Text:
+    ChangeFont: 1
+    Font: {fileID: 0}
+    FontTMPro: {fileID: 0}
+    ChangeFontStyle: 0
+    FontStyle: 0
+    ChangeSize: 0
+    Size: 18
+    ChangeLineSpacing: 0
+    LineSpacing: 1
+    ChangeRichText: 0
+    RichText: 1
+    ChangeAlignment: 0
+    Alignment: 0
+    ChangeHorizontalOverflow: 0
+    HorizontalOverflow: 0
+    ChangeVerticalOverflow: 0
+    VerticalOverflow: 0
+    ChangeBestFit: 0
+    BestFit: 0
+    MinSize: 10
+    MaxSize: 40
+    ChangeColor: 1
+    Color: {r: 0, g: 0, b: 0, a: 1}
+    ChangeMaterial: 0
+    Material: {fileID: 0}
+  HorizontalScrollbar:
+    MainBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Background:
+      Sprite: {fileID: 21300000, guid: d734d34f9d1775048992f363c3b8e8de, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: 3bd3e729ba1d3c347b460ac948c0a3b0, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  VerticalScrollbar:
+    MainBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Background:
+      Sprite: {fileID: 21300000, guid: 6914e4c3271e398438bd8da65de0eb5d, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: d29a415a37e8e724d9feb6c8ecaed85f, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  InputField:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Placeholder:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: .783999979, g: .783999979, b: .783999979, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Button:
+    StyleSupportRequired: 1
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Text:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Slider:
+    Background:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Fill:
+      Sprite: {fileID: 0}
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Handle:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+  Toggle:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Checkmark:
+      Sprite: {fileID: 21300000, guid: f3bbe763c6d672046b9f2b7d65c3564b, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Label:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: .650980413, b: .968627453, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+  Dropdown:
+    Background:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    Label:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}
+    Arrow:
+      Sprite: {fileID: 21300000, guid: c6f26aeed8f7e134b9f6a11ac8d96f6e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    OptionsBackground:
+      Sprite: {fileID: 21300000, guid: cc38edc86935ef1468b76c421cca620e, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ItemBackground:
+      Sprite: {fileID: 0}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 1
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ItemCheckmark:
+      Sprite: {fileID: 21300000, guid: f3bbe763c6d672046b9f2b7d65c3564b, type: 3}
+      Color: {r: 1, g: 1, b: 1, a: 1}
+      ImageType: 0
+      PreserveAspect: 0
+      FillCenter: 1
+      FillMethod: 4
+      FillOrigin: 0
+      FillAmount: 0
+      FillClockwise: 1
+      Material: {fileID: 0}
+    ItemLabel:
+      ChangeFont: 1
+      Font: {fileID: 0}
+      FontTMPro: {fileID: 0}
+      ChangeFontStyle: 0
+      FontStyle: 0
+      ChangeSize: 0
+      Size: 18
+      ChangeLineSpacing: 0
+      LineSpacing: 1
+      ChangeRichText: 0
+      RichText: 1
+      ChangeAlignment: 0
+      Alignment: 0
+      ChangeHorizontalOverflow: 0
+      HorizontalOverflow: 0
+      ChangeVerticalOverflow: 0
+      VerticalOverflow: 0
+      ChangeBestFit: 0
+      BestFit: 0
+      MinSize: 10
+      MaxSize: 40
+      ChangeColor: 1
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      ChangeMaterial: 0
+      Material: {fileID: 0}

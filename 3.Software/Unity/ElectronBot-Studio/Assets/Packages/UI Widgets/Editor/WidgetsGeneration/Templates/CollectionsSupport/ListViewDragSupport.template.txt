@@ -1,0 +1,28 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// ListView drag support for the {0:SourceClassShortName}.
+	/// </summary>
+	[UnityEngine.RequireComponent(typeof({0:ListViewComponentClass}))]
+	public partial class {0:ListViewDragSupportClass} : UIWidgets.ListViewCustomDragSupport<{0:ListViewClass}, {0:ListViewComponentClass}, {0:SourceClass}>
+	{{
+		/// <summary>
+		/// Get data from specified component.
+		/// </summary>
+		/// <param name="component">Component.</param>
+		/// <returns>Data.</returns>
+		protected override {0:SourceClass} GetData({0:ListViewComponentClass} component)
+		{{
+			return component.Item;
+		}}
+
+		/// <summary>
+		/// Set data for DragInfo component.
+		/// </summary>
+		/// <param name="data">Data.</param>
+		protected override void SetDragInfoData({0:SourceClass} data)
+		{{
+			DragInfo.SetData(data);
+		}}
+	}}
+}}

@@ -1,0 +1,163 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// ListView component for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:ListViewComponentClass} : UIWidgets.ListViewItem, UIWidgets.IViewData<{0:SourceClass}>
+	{{
+		/// <inheritdoc/>
+		protected override void GraphicsBackgroundInit()
+		{{
+			base.GraphicsBackgroundInit();
+
+			if (CellsBackgroundVersion == 0)
+			{{
+				var result = new System.Collections.Generic.List<UnityEngine.UI.Graphic>();
+
+				foreach (UnityEngine.Transform child in transform)
+				{{
+					var graphic = child.GetComponent<UnityEngine.UI.Graphic>();
+					if (graphic != null)
+					{{
+						result.Add(graphic);
+					}}
+				}}
+
+				if (result.Count > 0)
+				{{
+					cellsGraphicsBackground = result.ToArray();
+
+					CellsBackgroundVersion = 1;
+				}}
+			}}
+		}}
+
+		/// <inheritdoc/>
+		protected override void GraphicsForegroundInit()
+		{{
+			if (GraphicsForegroundVersion == 0)
+			{{
+				Foreground = new UnityEngine.UI.Graphic[] {{ {0:TextFields@UIWidgets.UtilitiesUI.GetGraphic([0:WidgetFieldName]), } }};
+				if (!UIWidgets.UtilitiesCollections.AllNull(Foreground))
+				{{
+					GraphicsForegroundVersion = 1;
+				}}
+			}}
+		}}
+{0:Fields@
+		/// <summary>
+		/// The [0:FieldName].
+		/// </summary>
+		public [0:WidgetClass] [0:WidgetFieldName];
+}
+		/// <summary>
+		/// Gets the current item.
+		/// </summary>
+		public {0:SourceClass} Item
+		{{
+			get;
+			protected set;
+		}}
+
+		/// <summary>
+		/// Tooltip.
+		/// </summary>
+		[UnityEngine.SerializeField]
+		protected {0:TooltipClass} tooltip;
+
+		/// <summary>
+		/// Tooltip.
+		/// </summary>
+		public {0:TooltipClass} Tooltip
+		{{
+			get
+			{{
+				return tooltip;
+			}}
+
+			set
+			{{
+				if (tooltip != null)
+				{{
+					Tooltip.Unregister(gameObject);
+				}}
+
+				tooltip = value;
+
+				if ((tooltip != null) && (Item != null))
+				{{
+					Tooltip.Register(gameObject, Item, TooltipSettings);
+				}}
+			}}
+		}}
+
+		/// <summary>
+		/// Tooltip settings.
+		/// </summary>
+		[UnityEngine.SerializeField]
+		protected UIWidgets.TooltipSettings TooltipSettings = new UIWidgets.TooltipSettings(UIWidgets.TooltipPosition.TopCenter);
+
+		/// <summary>
+		/// Sets component data with specified item.
+		/// </summary>
+		/// <param name="item">Item.</param>
+		public virtual void SetData({0:SourceClass} item)
+		{{
+			Item = item;
+
+			#if UNITY_EDITOR
+			{0:IfAutocomplete@name = Item == null ? "DefaultItem " + Index.ToString() : Item.[0:AutocompleteField];}{0:!IfAutocomplete@name = "DefaultItem " + Index;}
+			#endif
+
+			if ((Tooltip != null) && (Item != null))
+			{{
+				Tooltip.Register(gameObject, Item, TooltipSettings);
+			}}
+
+			UpdateView();
+		}}
+
+		/// <inheritdoc/>
+		public override void LocaleChanged()
+		{{
+			UpdateView();
+		}}
+
+		/// <summary>
+		/// Update view.
+		/// </summary>
+		protected void UpdateView()
+		{{
+			if (Item == null)
+			{{
+				return;
+			}}
+{0:Fields@
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = Item.[0:FieldName][0:FieldFormat];
+			]]
+}{0:ImageFieldsNullable@
+			// set transparent color if no icon
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].color = ([0:WidgetFieldName].[0:WidgetValueField] == null) ? UnityEngine.Color.clear : UnityEngine.Color.white;
+			]]
+}
+		}}
+
+		/// <inheritdoc/>
+		public override void MovedToCache()
+		{{{0:ImageFieldsNullable@
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = null;
+			]]
+}
+			if (Tooltip != null)
+			{{
+				Tooltip.Unregister(gameObject);
+			}}
+		}}
+	}}
+}}

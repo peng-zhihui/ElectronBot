@@ -1,0 +1,9 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Picker from TreeView for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:PickerTreeViewClass} : UIWidgets.PickerTreeViewCustom<{0:TreeViewClass}, {0:TreeViewComponentClass}, {0:SourceClass}, UIWidgets.TreeNode<{0:SourceClass}>, {0:PickerTreeViewClass}>
+	{{
+	}}
+}}

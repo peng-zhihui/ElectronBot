@@ -1,0 +1,1 @@
+// unused, can be deleted; replaced with UIWidgets.i10n

@@ -1,0 +1,54 @@
+#if UIWIDGETS_DATABIND_SUPPORT
+namespace {0:Namespace}
+{{
+	using Slash.Unity.DataBind.Foundation.Synchronizers;
+	using UnityEngine;
+
+	/// <summary>
+	/// Synchronizer for the {0:FieldName} of a {0:TargetShortName}.
+	/// </summary>
+	public class {0:TargetShortName}{0:FieldName}Synchronizer : ComponentDataSynchronizer<{0:TargetFullName}, {0:FieldType}>
+	{{
+		{0:TargetShortName}{0:FieldName}Observer observer;
+
+		/// <inheritdoc />
+		public override void Disable()
+		{{
+			base.Disable();
+			
+			if (observer != null)
+			{{
+				observer.ValueChanged -= OnObserverValueChanged;
+				observer = null;
+			}}
+		}}
+
+		/// <inheritdoc />
+		public override void Enable()
+		{{
+			base.Enable();
+
+			var target = Target;
+			if (target != null)
+			{{
+				observer = new {0:TargetShortName}{0:FieldName}Observer
+				{{
+					Target = target,
+				}};
+				observer.ValueChanged += OnObserverValueChanged;
+			}}
+		}}
+
+		/// <inheritdoc />
+		protected override void SetTargetValue({0:TargetFullName} target, {0:FieldType} newContextValue)
+		{{
+			target.{0:FieldName} = newContextValue;
+		}}
+
+		void OnObserverValueChanged()
+		{{
+			OnComponentValueChanged(Target.{0:FieldName});
+		}}
+	}}
+}}
+#endif

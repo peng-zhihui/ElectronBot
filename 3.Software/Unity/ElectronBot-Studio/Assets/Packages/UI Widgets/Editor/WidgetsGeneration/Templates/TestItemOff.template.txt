@@ -1,0 +1,40 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Test script for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TestClass} : UIWidgets.WidgetGeneration.TestBase<{0:SourceClass}>
+	{{
+		/// <summary>
+		/// Is items can be generated?
+		/// </summary>
+		protected override bool CanGenerateItems
+		{{
+			get
+			{{
+				return false;
+			}}
+		}}
+
+		/// <summary>
+		/// Generate item.
+		/// </summary>
+		/// <param name="index">Item index.</param>
+		/// <returns>Item.</returns>
+		protected override {0:SourceClass} GenerateItem(int index)
+		{{
+			return null;
+		}}
+
+		/// <summary>
+		/// Generate item with the specified name.
+		/// </summary>
+		/// <param name="name">Item name.</param>
+		/// <param name="index">Item index.</param>
+		/// <returns>Item.</returns>
+		protected override {0:SourceClass} GenerateItem(string name, int index)
+		{{
+			return null;
+		}}
+	}}
+}}

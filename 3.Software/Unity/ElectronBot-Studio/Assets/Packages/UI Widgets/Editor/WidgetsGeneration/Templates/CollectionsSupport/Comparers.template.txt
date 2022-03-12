@@ -1,0 +1,47 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Sort fields for the for the {0:SourceClassShortName}.
+	/// </summary>
+	public enum {0:ComparersEnum}
+	{{
+		/// <summary>
+		/// Not sorted list.
+		/// </summary>
+		None,
+{0:TextFields@
+		/// <summary>
+		/// [0:FieldName].
+		/// </summary>
+		[0:FieldName],
+}
+	}}
+
+	/// <summary>
+	/// Comparer functions for the {0:SourceClassShortName}.
+	/// </summary>
+	public static partial class {0:ComparersClass}
+	{{
+		/// <summary>
+		/// Comparer.
+		/// </summary>
+		public static readonly System.Collections.Generic.Dictionary<int, System.Comparison<{0:SourceClass}>> Comparers = new System.Collections.Generic.Dictionary<int, System.Comparison<{0:SourceClass}>>()
+			{{{0:TextFields@
+				[[ (int)[1:ComparersEnum].[0:FieldName], [0:FieldName]Comparer ]],}
+			}};
+
+		#region Items comparer{0:TextFields@
+
+		/// <summary>
+		/// [0:FieldName] comparer.
+		/// </summary>
+		/// <param name="x">First [1:SourceClassShortName].</param>
+		/// <param name="y">Second [1:SourceClassShortName].</param>
+		/// <returns>A 32-bit signed integer that indicates whether X precedes, follows, or appears in the same position in the sort order as the Y parameter.</returns>
+		static int [0:FieldName]Comparer([1:SourceClass] x, [1:SourceClass] y)
+		[[
+			return UIWidgets.UtilitiesCompare.Compare(x.[0:FieldName], y.[0:FieldName]);
+		]]}
+		#endregion
+	}}
+}}

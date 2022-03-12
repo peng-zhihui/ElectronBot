@@ -1,0 +1,2 @@
+3.Software\Unity\ElectronBot-Studio\Assets\Materials\Fonts\msyh.asset
+3.Software\Unity\ElectronBot-Studio\Assets\Plugins\opencv_world348d.dll

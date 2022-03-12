@@ -1,0 +1,451 @@
+﻿#if UNITY_EDITOR
+namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Widget prefabs generator for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:PrefabGeneratorClass} : UIWidgets.WidgetGeneration.PrefabGenerator
+	{{
+		/// <summary>
+		/// Run widget prefabs generator for the {0:SourceClassShortName}.
+		/// </summary>
+		[UnityEditor.Callbacks.DidReloadScripts]
+		// [UnityEditor.MenuItem("Tools/Test {0:SourceClassShortName} generator")]
+		public static void Run()
+		{{
+			var info = UIWidgets.UtilitiesEditor.Deserialize<UIWidgets.WidgetGeneration.ClassInfo>("{0:Info}");
+			var path = UIWidgets.UtilitiesEditor.Deserialize<string>("{0:Path}");
+
+			var gen_path = path + System.IO.Path.DirectorySeparatorChar + "Editor" + System.IO.Path.DirectorySeparatorChar;
+			var gen_mainfile = gen_path + "PrefabGenerator" + info.ShortTypeName + ".cs";
+
+			if (!System.IO.File.Exists(gen_mainfile))
+			{{
+				return;
+			}}
+
+			var gen = new {0:PrefabGeneratorClass}(info, path);
+			gen.Generate();
+
+			Delete(gen_mainfile);
+			Delete(gen_path + "PrefabGeneratorAutocomplete" + info.ShortTypeName + ".cs");
+			Delete(gen_path + "PrefabGeneratorTable" + info.ShortTypeName + ".cs");
+			Delete(gen_path + "PrefabGeneratorScene" + info.ShortTypeName + ".cs");
+
+			gen.Clear();
+
+			UnityEditor.AssetDatabase.SaveAssets();
+			UnityEditor.AssetDatabase.Refresh();
+		}}
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="{0:PrefabGeneratorClass}"/> class.
+		/// </summary>
+		/// <param name="info">Class info.</param>
+		/// <param name="path">Path to save created files.</param>
+		{0:PrefabGeneratorClass}(UIWidgets.WidgetGeneration.ClassInfo info, string path)
+			: base(path)
+		{{
+			Info = info;
+		}}
+
+		{0:TextType} AddLabel(UnityEngine.GameObject go, string text, int fontSize = 26, bool addAdapter = false)
+		{{
+			var rt = go.transform as UnityEngine.RectTransform;
+			var sd = rt.sizeDelta;
+			var label = go.AddComponent<{0:TextType}>();
+			rt.sizeDelta = sd;
+			InitTextComponent(label);
+			label.text = text;
+			label.fontSize = fontSize;
+			label.color = UnityEngine.Color.white;
+
+			if (addAdapter)
+			{{
+				go.AddComponent<UIWidgets.TextAdapter>();
+			}}
+
+			return label;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GeneratePickerListView()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.PickerListView);
+			go.name = "PickerListView" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.PickerGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:PickerListViewClass}>();
+			target.CloseButton = helper.ButtonClose;
+
+			var lv_prefab = PrefabsMenu.ListView;
+			var lv = UnityEngine.Object.Instantiate(lv_prefab) as UnityEngine.GameObject;
+			lv.name = lv_prefab.name;
+
+			var le = lv.AddComponent<UnityEngine.UI.LayoutElement>();
+			le.minWidth = 300;
+			le.minHeight = 400;
+
+			var rt = lv.transform as UnityEngine.RectTransform;
+			rt.SetParent(helper.Content, false);
+
+			target.ListView = lv.GetComponent<{0:ListViewClass}>();
+
+			AddListener(helper.ButtonCancel.GetComponent<UnityEngine.UI.Button>().onClick, target.Cancel);
+
+			AddLabel(helper.Title, "PickerListView" + Info.ShortTypeName, 16);
+			var cancel_text = AddLabel(helper.ButtonCancel.Text, "Cancel", 14);
+			SetTextAlignment(cancel_text, UnityEngine.TextAnchor.MiddleCenter);
+			
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GeneratePickerTreeView()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.PickerTreeView);
+			go.name = "PickerTreeView" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.PickerGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:PickerTreeViewClass}>();
+			target.CloseButton = helper.ButtonClose;
+
+			var lv_prefab = PrefabsMenu.TreeView;
+			var lv = UnityEngine.Object.Instantiate(lv_prefab) as UnityEngine.GameObject;
+			lv.name = lv_prefab.name;
+
+			var le = lv.AddComponent<UnityEngine.UI.LayoutElement>();
+			le.minWidth = 500;
+			le.minHeight = 400;
+
+			var rt = lv.transform as UnityEngine.RectTransform;
+			rt.SetParent(helper.Content, false);
+
+			target.TreeView = lv.GetComponent<{0:TreeViewClass}>();
+			target.OkButton = helper.ButtonOK.GetComponent<UnityEngine.UI.Button>();
+
+			AddListener(helper.ButtonCancel.GetComponent<UnityEngine.UI.Button>().onClick, target.Cancel);
+
+			AddLabel(helper.Title, "PickerTreeView" + Info.ShortTypeName, 16);
+			var cancel_text = AddLabel(helper.ButtonCancel.Text, "Cancel", 14);
+			SetTextAlignment(cancel_text, UnityEngine.TextAnchor.MiddleCenter);
+
+			var ok_text = AddLabel(helper.ButtonOK.Text, "OK", 14);
+			SetTextAlignment(ok_text, UnityEngine.TextAnchor.MiddleCenter);
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateTreeGraph()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.TreeGraph);
+			go.name = "TreeGraph" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.TreeGraphGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:TreeGraphClass}>();
+
+			target.Direction = UIWidgets.TreeGraphDirections.LeftToRight;
+			target.DefaultItem = CreateTreeGraphComponent(helper.DefaultItem);
+			target.DefaultItem.Background = helper.Background;
+			target.Spacing = new UnityEngine.Vector2(30f, 10f);
+			AddListViewLayoutGroup(helper.DefaultItem);
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		static {0:TreeGraphComponentClass} CreateTreeGraphComponent(UnityEngine.GameObject go)
+		{{
+			var item = go.AddComponent<{0:TreeGraphComponentClass}>();
+			var rt = item.transform as UnityEngine.RectTransform;
+			rt.sizeDelta = new UnityEngine.Vector2(280f, 35f);
+{0:Fields@
+			item.[0:WidgetFieldName] = CreateObject<[0:WidgetClass]>(item.transform, "[0:FieldName]");}
+{0:FieldsSprite@
+			item.[0:WidgetFieldName].preserveAspect = true;}
+{0:TextFields@
+			item.[0:WidgetFieldName].text = "[0:FieldName]";
+			item.[0:WidgetFieldName].fontSize = 18;
+			item.[0:WidgetFieldName].transform.SetAsLastSibling();
+
+			var le[0:WidgetFieldName] = item.[0:WidgetFieldName].gameObject.AddComponent<UnityEngine.UI.LayoutElement>();
+			le[0:WidgetFieldName].minWidth = 80;
+			le[0:WidgetFieldName].flexibleWidth = 0;}
+{0:TextFieldFirst@
+			le[0:WidgetFieldName].minWidth = 120;
+			le[0:WidgetFieldName].flexibleWidth = 1;}
+{0:ImageFields@
+			AddLayoutElement(item.[0:WidgetFieldName].gameObject);}
+
+			return item;
+		}}
+		
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateTreeView()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.TreeView);
+			go.name = "TreeView" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.TreeViewGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:TreeViewClass}>();
+			target.Container = helper.Container;
+			target.ScrollRect = helper.ScrollRect;
+
+			UIWidgets.Compatibility.SetViewport(target.ScrollRect, helper.Viewport);
+
+			var tree_drop = target.gameObject.AddComponent<{0:TreeViewDropSupportClass}>();
+			tree_drop.DropIndicator = CreateDropIndicator(helper.Container.transform);
+
+			target.DefaultItem = CreateTreeViewComponent(helper.DefaultItem);
+			target.DefaultItem.Indentation = helper.Indentation;
+			target.DefaultItem.Toggle = helper.Toggle;
+
+			AddTreeViewDragSupport(helper.DefaultItem);
+
+			var node_drop = helper.DefaultItem.AddComponent<{0:TreeViewNodeDropSupportClass}>();
+			node_drop.DropIndicator = tree_drop.DropIndicator;
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		static {0:TreeViewNodeDragSupportClass} AddTreeViewDragSupport(UnityEngine.GameObject go)
+		{{
+			var drag = go.AddComponent<{0:TreeViewNodeDragSupportClass}>();
+
+			return drag;
+		}}
+
+		static {0:TreeViewComponentClass} CreateTreeViewComponent(UnityEngine.GameObject go)
+		{{
+			var item = go.AddComponent<{0:TreeViewComponentClass}>();
+{0:Fields@
+			item.[0:WidgetFieldName] = CreateObject<[0:WidgetClass]>(item.transform, "[0:FieldName]");}
+{0:FieldsSprite@
+			item.[0:WidgetFieldName].preserveAspect = true;}
+{0:TextFields@
+			item.[0:WidgetFieldName].text = "[0:FieldName]";
+			item.[0:WidgetFieldName].fontSize = 16;
+			item.[0:WidgetFieldName].transform.SetAsLastSibling();
+
+			var le[0:WidgetFieldName] = item.[0:WidgetFieldName].gameObject.AddComponent<UnityEngine.UI.LayoutElement>();
+			le[0:WidgetFieldName].minWidth = 100;
+			le[0:WidgetFieldName].flexibleWidth = 0;}
+{0:ImageFields@
+			var le[0:WidgetFieldName] = AddLayoutElement(item.[0:WidgetFieldName].gameObject);
+			le[0:WidgetFieldName].flexibleWidth = 0;}
+{0:TableFieldFirst@
+			le[0:WidgetFieldName].minWidth = 200;
+			le[0:WidgetFieldName].flexibleWidth = 1;}
+
+			return item;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateTileView()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.TileView);
+			go.name = "TileView" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.ListViewGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:ListViewClass}>();
+			target.Container = helper.Container;
+			target.ScrollRect = helper.ScrollRect;
+			target.ListType = UIWidgets.ListViewType.TileViewWithFixedSize;
+
+			UIWidgets.Compatibility.SetViewport(target.ScrollRect, helper.Viewport);
+
+			var drop = target.gameObject.AddComponent<{0:ListViewDropSupportClass}>();
+			drop.DropIndicator = CreateDropIndicator(helper.Container.transform);
+
+			target.DefaultItem = CreateListViewComponent(helper.DefaultItem);
+			AddTileViewLayoutGroup(helper.DefaultItem);
+
+			var drag = AddListViewDragSupport(helper.DefaultItem);
+			drag.ListView = target;
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateCombobox()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.Combobox);
+
+			go.name = "Combobox" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.ComboboxGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:ComboboxClass}>();
+			target.ToggleButton = helper.ToggleButton;
+
+			target.Current = CreateListViewComponent(helper.DefaultItem, 16);
+			AddListViewLayoutGroup(helper.DefaultItem);
+			helper.DefaultItem.SetActive(true);
+
+			var lv_prefab = PrefabsMenu.ListView;
+			var lv = UnityEngine.Object.Instantiate(lv_prefab) as UnityEngine.GameObject;
+			lv.name = lv_prefab.name;
+			var rt = lv.transform as UnityEngine.RectTransform;
+			rt.SetParent(go.transform, false);
+			rt.anchorMin = UnityEngine.Vector2.zero;
+			rt.anchorMax = new UnityEngine.Vector2(1f, 0f);
+			rt.anchoredPosition = new UnityEngine.Vector2(0f, 0f);
+			rt.sizeDelta = new UnityEngine.Vector2(0f, 150f);
+			lv.gameObject.SetActive(false);
+			target.ListView = lv.GetComponent<{0:ListViewClass}>();
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateComboboxMultiselect()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.ComboboxMultiselect);
+
+			go.name = "ComboboxMultiselect" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.ComboboxGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:ComboboxClass}>();
+			target.ToggleButton = helper.ToggleButton;
+
+			target.Current = CreateListViewComponent(helper.DefaultItem, 16);
+			AddComboboxMultiselectLayoutGroup(helper.DefaultItem);
+			helper.DefaultItem.SetActive(true);
+
+			AddListener(helper.DefaultItemRemove.onClick, target.Current.DeselectItem);
+
+			var lv_prefab = PrefabsMenu.ListView;
+			var lv = UnityEngine.Object.Instantiate(lv_prefab) as UnityEngine.GameObject;
+			lv.name = lv_prefab.name;
+
+			var le = lv.AddComponent<UnityEngine.UI.LayoutElement>();
+			le.ignoreLayout = true;
+
+			var rt = lv.transform as UnityEngine.RectTransform;
+			rt.SetParent(helper.Main.transform, false);
+			rt.anchorMin = UnityEngine.Vector2.zero;
+			rt.anchorMax = new UnityEngine.Vector2(1f, 0f);
+			rt.anchoredPosition = new UnityEngine.Vector2(0f, 0f);
+			rt.sizeDelta = new UnityEngine.Vector2(0f, 150f);
+			lv.gameObject.SetActive(false);
+			target.ListView = lv.GetComponent<{0:ListViewClass}>();
+			target.ListView.MultipleSelect = true;
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateDragInfo()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.DragInfo);
+			go.name = "DragInfo" + Info.ShortTypeName;
+
+			CreateListViewComponent(go);
+			AddListViewLayoutGroup(go);
+
+			go.SetActive(false);
+
+			return go;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateListView()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.ListView);
+			go.name = "ListView" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.ListViewGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:ListViewClass}>();
+			target.Container = helper.Container;
+			target.ScrollRect = helper.ScrollRect;
+
+			UIWidgets.Compatibility.SetViewport(target.ScrollRect, helper.Viewport);
+
+			var drop = target.gameObject.AddComponent<{0:ListViewDropSupportClass}>();
+			drop.DropIndicator = CreateDropIndicator(helper.Container.transform);
+
+			target.DefaultItem = CreateListViewComponent(helper.DefaultItem);
+			AddListViewLayoutGroup(helper.DefaultItem);
+
+			var drag = AddListViewDragSupport(helper.DefaultItem);
+			drag.ListView = target;
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		static {0:ListViewComponentClass} CreateListViewComponent(UnityEngine.GameObject go, int fontSize = 18)
+		{{
+			var item = go.AddComponent<{0:ListViewComponentClass}>();
+{0:Fields@
+			item.[0:WidgetFieldName] = CreateObject<[0:WidgetClass]>(item.transform, "[0:FieldName]");}
+{0:FieldsSprite@
+			item.[0:WidgetFieldName].preserveAspect = true;}
+
+{0:TextFields@
+			item.[0:WidgetFieldName].text = "[0:FieldName]";
+			item.[0:WidgetFieldName].fontSize = fontSize;
+			item.[0:WidgetFieldName].transform.SetAsLastSibling();
+			var le[0:WidgetFieldName] = item.[0:WidgetFieldName].gameObject.AddComponent<UnityEngine.UI.LayoutElement>();
+			le[0:WidgetFieldName].flexibleWidth = 1;
+}{0:ImageFields@
+			AddLayoutElement(item.[0:WidgetFieldName].gameObject);}
+
+			return item;
+		}}
+
+		static {0:ListViewDragSupportClass} AddListViewDragSupport(UnityEngine.GameObject go)
+		{{
+			var drag = go.AddComponent<{0:ListViewDragSupportClass}>();
+
+			return drag;
+		}}
+
+		/// <inheritdoc/>
+		protected override UnityEngine.GameObject GenerateTooltip()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.Tooltip);
+			go.name = "Tooltip" + Info.ShortTypeName;
+
+			var tooltip = go.AddComponent<{0:TooltipClass}>();
+{0:Fields@
+			tooltip.[0:WidgetFieldName] = CreateObject<[0:WidgetClass]>(tooltip.transform, "[0:FieldName]");}
+{0:FieldsSprite@
+			tooltip.[0:WidgetFieldName].preserveAspect = true;}
+
+{0:TextFields@
+			tooltip.[0:WidgetFieldName].text = "[0:FieldName]";
+			tooltip.[0:WidgetFieldName].fontSize = 18;
+			tooltip.[0:WidgetFieldName].transform.SetAsLastSibling();
+			var le[0:WidgetFieldName] = tooltip.[0:WidgetFieldName].gameObject.AddComponent<UnityEngine.UI.LayoutElement>();
+			le[0:WidgetFieldName].flexibleHeight = 1;
+}{0:ImageFields@
+			AddLayoutElement(tooltip.[0:WidgetFieldName].gameObject);}
+
+			return go;
+		}}
+	}}
+}}
+#endif

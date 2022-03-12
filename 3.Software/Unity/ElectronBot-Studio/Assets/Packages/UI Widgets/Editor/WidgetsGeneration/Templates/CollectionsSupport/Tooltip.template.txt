@@ -1,0 +1,52 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Tooltip {0:SourceClass}.
+	/// </summary>
+	public class {0:TooltipClass} : UIWidgets.Tooltip<{0:SourceClass}, {0:TooltipClass}>
+	{{
+{0:Fields@
+		/// <summary>
+		/// The [0:FieldName].
+		/// </summary>
+		public [0:WidgetClass] [0:WidgetFieldName];
+}
+		/// <summary>
+		/// Gets the current item.
+		/// </summary>
+		public {0:SourceClass} Item
+		{{
+			get;
+			protected set;
+		}}
+
+		/// <inheritdoc/>
+		protected override void SetData({0:SourceClass} item)
+		{{
+			Item = item;
+
+			UpdateView();
+		}}
+
+		/// <inheritdoc/>
+		protected override void UpdateView()
+		{{
+			if (Item == null)
+			{{
+				return;
+			}}
+{0:Fields@
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = Item.[0:FieldName][0:FieldFormat];
+			]]
+}{0:ImageFieldsNullable@
+			// set transparent color if no icon
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].color = ([0:WidgetFieldName].[0:WidgetValueField] == null) ? UnityEngine.Color.clear : UnityEngine.Color.white;
+			]]
+}
+		}}
+	}}
+}}

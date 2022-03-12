@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 24527fb9156c00d4da20c2fefd80eddf
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - AllowDropCursor: {fileID: 2800000, guid: 7114ce38ced91cf44816ec1e50cf9d48, type: 3}
+  - DeniedDropCursor: {fileID: 2800000, guid: e0339fdde21c99d409e93d07abc4fdef, type: 3}
+  - DefaultCursorTexture: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

@@ -1,0 +1,39 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// ListView for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:ListViewClass} : UIWidgets.ListViewCustom<{0:ListViewComponentClass}, {0:SourceClass}>
+	{{
+		{0:ComparersEnum} currentSortField = {0:ComparersEnum}.None;
+
+		/// <summary>
+		/// Toggle sort.
+		/// </summary>
+		/// <param name="field">Sort field.</param>
+		public void ToggleSort({0:ComparersEnum} field)
+		{{
+			if (field == currentSortField)
+			{{
+				DataSource.Reverse();
+			}}
+			else if ({0:ComparersClass}.Comparers.ContainsKey((int)field))
+			{{
+				currentSortField = field;
+
+				DataSource.Sort({0:ComparersClass}.Comparers[(int)field]);
+			}}
+		}}
+
+		#region used in Button.OnClick(){0:TextFields@
+
+		/// <summary>
+		/// Sort by [0:FieldName].
+		/// </summary>
+		public void SortBy[0:FieldName]()
+		[[
+			ToggleSort([1:ComparersEnum].[0:FieldName]);
+		]]}
+		#endregion
+	}}
+}}

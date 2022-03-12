@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1483167584e8a5f4c93e659817cbc80c
+timeCreated: 1622568694
+licenseType: Store
+labels:
+- CircularSlider
+- UiwidgetsPrefab
+- UiwidgetsCircularSliderPrefab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

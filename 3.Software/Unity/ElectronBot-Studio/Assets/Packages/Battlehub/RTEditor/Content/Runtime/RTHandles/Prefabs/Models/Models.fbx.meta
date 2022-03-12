@@ -1,0 +1,772 @@
+fileFormatVersion: 2
+guid: 237758c99c21ca84d9c5871dd6e8adcb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: Armature.002
+    100006: Armature.003
+    100008: Armature.004
+    100010: Armature.005
+    100012: Armature.006
+    100014: Armature.007
+    100016: B1x
+    100018: B1x 1
+    100020: B1x 2
+    100022: B1x 3
+    100024: B1x 4
+    100026: B1x 5
+    100028: B1x 6
+    100030: B1x 7
+    100032: B1x_end
+    100034: B1x_end 1
+    100036: B1x_end 2
+    100038: B1x_end 3
+    100040: B1x_end 4
+    100042: B1x_end 5
+    100044: B1x_end 6
+    100046: B1x_end 7
+    100048: B1y
+    100050: B1y 1
+    100052: B1y 2
+    100054: B1y 3
+    100056: B1y 4
+    100058: B1y 5
+    100060: B1y 6
+    100062: B1y 7
+    100064: B1y_end
+    100066: B1y_end 1
+    100068: B1y_end 2
+    100070: B1y_end 3
+    100072: B1y_end 4
+    100074: B1y_end 5
+    100076: B1y_end 6
+    100078: B1y_end 7
+    100080: B1z
+    100082: B1z 1
+    100084: B1z 2
+    100086: B1z 3
+    100088: B1z 4
+    100090: B1z 5
+    100092: B1z 6
+    100094: B1z 7
+    100096: B1z_end
+    100098: B1z_end 1
+    100100: B1z_end 2
+    100102: B1z_end 3
+    100104: B1z_end 4
+    100106: B1z_end 5
+    100108: B1z_end 6
+    100110: B1z_end 7
+    100112: B2x
+    100114: B2x 1
+    100116: B2x 2
+    100118: B2x 3
+    100120: B2x 4
+    100122: B2x 5
+    100124: B2x 6
+    100126: B2x 7
+    100128: B2x_end
+    100130: B2x_end 1
+    100132: B2x_end 2
+    100134: B2x_end 3
+    100136: B2x_end 4
+    100138: B2x_end 5
+    100140: B2x_end 6
+    100142: B2x_end 7
+    100144: B2y
+    100146: B2y 1
+    100148: B2y 2
+    100150: B2y 3
+    100152: B2y 4
+    100154: B2y 5
+    100156: B2y 6
+    100158: B2y 7
+    100160: B2y_end
+    100162: B2y_end 1
+    100164: B2y_end 2
+    100166: B2y_end 3
+    100168: B2y_end 4
+    100170: B2y_end 5
+    100172: B2y_end 6
+    100174: B2y_end 7
+    100176: B2z
+    100178: B2z 1
+    100180: B2z 2
+    100182: B2z 3
+    100184: B2z 4
+    100186: B2z 5
+    100188: B2z 6
+    100190: B2z 7
+    100192: B2z_end
+    100194: B2z_end 1
+    100196: B2z_end 2
+    100198: B2z_end 3
+    100200: B2z_end 4
+    100202: B2z_end 5
+    100204: B2z_end 6
+    100206: B2z_end 7
+    100208: B3x
+    100210: B3x 1
+    100212: B3x 2
+    100214: B3x 3
+    100216: B3x 4
+    100218: B3x 5
+    100220: B3x 6
+    100222: B3x 7
+    100224: B3x_end
+    100226: B3x_end 1
+    100228: B3x_end 2
+    100230: B3x_end 3
+    100232: B3x_end 4
+    100234: B3x_end 5
+    100236: B3x_end 6
+    100238: B3x_end 7
+    100240: B3y
+    100242: B3y 1
+    100244: B3y 2
+    100246: B3y 3
+    100248: B3y 4
+    100250: B3y 5
+    100252: B3y 6
+    100254: B3y 7
+    100256: B3y_end
+    100258: B3y_end 1
+    100260: B3y_end 2
+    100262: B3y_end 3
+    100264: B3y_end 4
+    100266: B3y_end 5
+    100268: B3y_end 6
+    100270: B3y_end 7
+    100272: B3z
+    100274: B3z 1
+    100276: B3z 2
+    100278: B3z 3
+    100280: B3z 4
+    100282: B3z 5
+    100284: B3z 6
+    100286: B3z 7
+    100288: B3z_end
+    100290: B3z_end 1
+    100292: B3z_end 2
+    100294: B3z_end 3
+    100296: B3z_end 4
+    100298: B3z_end 5
+    100300: B3z_end 6
+    100302: B3z_end 7
+    100304: bOx
+    100306: bOx 1
+    100308: bOx 2
+    100310: bOx 3
+    100312: bOx 4
+    100314: bOx 5
+    100316: bOx 6
+    100318: bOx 7
+    100320: bOx_end
+    100322: bOx_end 1
+    100324: bOx_end 2
+    100326: bOx_end 3
+    100328: bOx_end 4
+    100330: bOx_end 5
+    100332: bOx_end 6
+    100334: bOx_end 7
+    100336: BSx
+    100338: BSx 1
+    100340: BSx 2
+    100342: BSx 3
+    100344: BSx 4
+    100346: BSx 5
+    100348: BSx 6
+    100350: BSx 7
+    100352: BSx_end
+    100354: BSx_end 1
+    100356: BSx_end 2
+    100358: BSx_end 3
+    100360: BSx_end 4
+    100362: BSx_end 5
+    100364: BSx_end 6
+    100366: BSx_end 7
+    100368: BSy
+    100370: BSy 1
+    100372: BSy 2
+    100374: BSy 3
+    100376: BSy 4
+    100378: BSy 5
+    100380: BSy 6
+    100382: BSy 7
+    100384: BSy_end
+    100386: BSy_end 1
+    100388: BSy_end 2
+    100390: BSy_end 3
+    100392: BSy_end 4
+    100394: BSy_end 5
+    100396: BSy_end 6
+    100398: BSy_end 7
+    100400: BSz
+    100402: BSz 1
+    100404: BSz 2
+    100406: BSz 3
+    100408: BSz 4
+    100410: BSz 5
+    100412: BSz 6
+    100414: BSz 7
+    100416: BSz_end
+    100418: BSz_end 1
+    100420: BSz_end 2
+    100422: BSz_end 3
+    100424: BSz_end 4
+    100426: BSz_end 5
+    100428: BSz_end 6
+    100430: BSz_end 7
+    100432: Cone
+    100434: Cone.001
+    100436: Cone.002
+    100438: Cone.003
+    100440: Cone.004
+    100442: Cone.005
+    100444: Cone.006
+    100446: Cone.008
+    100448: //RootNode
+    100450: A0
+    100452: A1
+    100454: A2
+    100456: A3
+    100458: A4
+    100460: A5
+    100462: A6
+    100464: A7
+    100466: Arrows0
+    100468: Arrows1
+    100470: Arrows2
+    100472: Arrows3
+    100474: Arrows4
+    100476: Arrows5
+    100478: Arrows6
+    100480: Arrows7
+    100482: ScreenSpaceQuad
+    100484: A8
+    100486: Arrows8
+    100488: B1x 8
+    100490: B1x_end 8
+    100492: B1y 8
+    100494: B1y_end 8
+    100496: B1z 8
+    100498: B1z_end 8
+    100500: B2x 8
+    100502: B2x_end 8
+    100504: B2y 8
+    100506: B2y_end 8
+    100508: B2z 8
+    100510: B2z_end 8
+    100512: B3x 8
+    100514: B3x_end 8
+    100516: B3y 8
+    100518: B3y_end 8
+    100520: B3z 8
+    100522: B3z_end 8
+    100524: bOx 8
+    100526: bOx_end 8
+    100528: BSx 8
+    100530: BSx_end 8
+    100532: BSy 8
+    100534: BSy_end 8
+    100536: BSz 8
+    100538: BSz_end 8
+    100540: B1
+    100542: B1_end
+    100544: B2
+    100546: B2_end
+    100548: B3
+    100550: B3_end
+    100552: B4
+    100554: B4_end
+    100556: SSArmature
+    100558: B0
+    100560: B0_end
+    100562: B1x 9
+    100564: B1x_end 9
+    100566: B1y 9
+    100568: B1y_end 9
+    100570: B1z 9
+    100572: B1z_end 9
+    100574: B2x 9
+    100576: B2x_end 9
+    100578: B2y 9
+    100580: B2y_end 9
+    100582: B2z 9
+    100584: B2z_end 9
+    100586: B3x 9
+    100588: B3x_end 9
+    100590: B3y 9
+    100592: B3y_end 9
+    100594: B3z 9
+    100596: B3z_end 9
+    100598: bO
+    100600: bO_end
+    100602: S
+    100604: SArrows
+    100606: R
+    100608: S0
+    100610: SSR
+    100612: RCollider
+    400000: Armature
+    400002: Armature.001
+    400004: Armature.002
+    400006: Armature.003
+    400008: Armature.004
+    400010: Armature.005
+    400012: Armature.006
+    400014: Armature.007
+    400016: B1x
+    400018: B1x 1
+    400020: B1x 2
+    400022: B1x 3
+    400024: B1x 4
+    400026: B1x 5
+    400028: B1x 6
+    400030: B1x 7
+    400032: B1x_end
+    400034: B1x_end 1
+    400036: B1x_end 2
+    400038: B1x_end 3
+    400040: B1x_end 4
+    400042: B1x_end 5
+    400044: B1x_end 6
+    400046: B1x_end 7
+    400048: B1y
+    400050: B1y 1
+    400052: B1y 2
+    400054: B1y 3
+    400056: B1y 4
+    400058: B1y 5
+    400060: B1y 6
+    400062: B1y 7
+    400064: B1y_end
+    400066: B1y_end 1
+    400068: B1y_end 2
+    400070: B1y_end 3
+    400072: B1y_end 4
+    400074: B1y_end 5
+    400076: B1y_end 6
+    400078: B1y_end 7
+    400080: B1z
+    400082: B1z 1
+    400084: B1z 2
+    400086: B1z 3
+    400088: B1z 4
+    400090: B1z 5
+    400092: B1z 6
+    400094: B1z 7
+    400096: B1z_end
+    400098: B1z_end 1
+    400100: B1z_end 2
+    400102: B1z_end 3
+    400104: B1z_end 4
+    400106: B1z_end 5
+    400108: B1z_end 6
+    400110: B1z_end 7
+    400112: B2x
+    400114: B2x 1
+    400116: B2x 2
+    400118: B2x 3
+    400120: B2x 4
+    400122: B2x 5
+    400124: B2x 6
+    400126: B2x 7
+    400128: B2x_end
+    400130: B2x_end 1
+    400132: B2x_end 2
+    400134: B2x_end 3
+    400136: B2x_end 4
+    400138: B2x_end 5
+    400140: B2x_end 6
+    400142: B2x_end 7
+    400144: B2y
+    400146: B2y 1
+    400148: B2y 2
+    400150: B2y 3
+    400152: B2y 4
+    400154: B2y 5
+    400156: B2y 6
+    400158: B2y 7
+    400160: B2y_end
+    400162: B2y_end 1
+    400164: B2y_end 2
+    400166: B2y_end 3
+    400168: B2y_end 4
+    400170: B2y_end 5
+    400172: B2y_end 6
+    400174: B2y_end 7
+    400176: B2z
+    400178: B2z 1
+    400180: B2z 2
+    400182: B2z 3
+    400184: B2z 4
+    400186: B2z 5
+    400188: B2z 6
+    400190: B2z 7
+    400192: B2z_end
+    400194: B2z_end 1
+    400196: B2z_end 2
+    400198: B2z_end 3
+    400200: B2z_end 4
+    400202: B2z_end 5
+    400204: B2z_end 6
+    400206: B2z_end 7
+    400208: B3x
+    400210: B3x 1
+    400212: B3x 2
+    400214: B3x 3
+    400216: B3x 4
+    400218: B3x 5
+    400220: B3x 6
+    400222: B3x 7
+    400224: B3x_end
+    400226: B3x_end 1
+    400228: B3x_end 2
+    400230: B3x_end 3
+    400232: B3x_end 4
+    400234: B3x_end 5
+    400236: B3x_end 6
+    400238: B3x_end 7
+    400240: B3y
+    400242: B3y 1
+    400244: B3y 2
+    400246: B3y 3
+    400248: B3y 4
+    400250: B3y 5
+    400252: B3y 6
+    400254: B3y 7
+    400256: B3y_end
+    400258: B3y_end 1
+    400260: B3y_end 2
+    400262: B3y_end 3
+    400264: B3y_end 4
+    400266: B3y_end 5
+    400268: B3y_end 6
+    400270: B3y_end 7
+    400272: B3z
+    400274: B3z 1
+    400276: B3z 2
+    400278: B3z 3
+    400280: B3z 4
+    400282: B3z 5
+    400284: B3z 6
+    400286: B3z 7
+    400288: B3z_end
+    400290: B3z_end 1
+    400292: B3z_end 2
+    400294: B3z_end 3
+    400296: B3z_end 4
+    400298: B3z_end 5
+    400300: B3z_end 6
+    400302: B3z_end 7
+    400304: bOx
+    400306: bOx 1
+    400308: bOx 2
+    400310: bOx 3
+    400312: bOx 4
+    400314: bOx 5
+    400316: bOx 6
+    400318: bOx 7
+    400320: bOx_end
+    400322: bOx_end 1
+    400324: bOx_end 2
+    400326: bOx_end 3
+    400328: bOx_end 4
+    400330: bOx_end 5
+    400332: bOx_end 6
+    400334: bOx_end 7
+    400336: BSx
+    400338: BSx 1
+    400340: BSx 2
+    400342: BSx 3
+    400344: BSx 4
+    400346: BSx 5
+    400348: BSx 6
+    400350: BSx 7
+    400352: BSx_end
+    400354: BSx_end 1
+    400356: BSx_end 2
+    400358: BSx_end 3
+    400360: BSx_end 4
+    400362: BSx_end 5
+    400364: BSx_end 6
+    400366: BSx_end 7
+    400368: BSy
+    400370: BSy 1
+    400372: BSy 2
+    400374: BSy 3
+    400376: BSy 4
+    400378: BSy 5
+    400380: BSy 6
+    400382: BSy 7
+    400384: BSy_end
+    400386: BSy_end 1
+    400388: BSy_end 2
+    400390: BSy_end 3
+    400392: BSy_end 4
+    400394: BSy_end 5
+    400396: BSy_end 6
+    400398: BSy_end 7
+    400400: BSz
+    400402: BSz 1
+    400404: BSz 2
+    400406: BSz 3
+    400408: BSz 4
+    400410: BSz 5
+    400412: BSz 6
+    400414: BSz 7
+    400416: BSz_end
+    400418: BSz_end 1
+    400420: BSz_end 2
+    400422: BSz_end 3
+    400424: BSz_end 4
+    400426: BSz_end 5
+    400428: BSz_end 6
+    400430: BSz_end 7
+    400432: Cone
+    400434: Cone.001
+    400436: Cone.002
+    400438: Cone.003
+    400440: Cone.004
+    400442: Cone.005
+    400444: Cone.006
+    400446: Cone.008
+    400448: //RootNode
+    400450: A0
+    400452: A1
+    400454: A2
+    400456: A3
+    400458: A4
+    400460: A5
+    400462: A6
+    400464: A7
+    400466: Arrows0
+    400468: Arrows1
+    400470: Arrows2
+    400472: Arrows3
+    400474: Arrows4
+    400476: Arrows5
+    400478: Arrows6
+    400480: Arrows7
+    400482: ScreenSpaceQuad
+    400484: A8
+    400486: Arrows8
+    400488: B1x 8
+    400490: B1x_end 8
+    400492: B1y 8
+    400494: B1y_end 8
+    400496: B1z 8
+    400498: B1z_end 8
+    400500: B2x 8
+    400502: B2x_end 8
+    400504: B2y 8
+    400506: B2y_end 8
+    400508: B2z 8
+    400510: B2z_end 8
+    400512: B3x 8
+    400514: B3x_end 8
+    400516: B3y 8
+    400518: B3y_end 8
+    400520: B3z 8
+    400522: B3z_end 8
+    400524: bOx 8
+    400526: bOx_end 8
+    400528: BSx 8
+    400530: BSx_end 8
+    400532: BSy 8
+    400534: BSy_end 8
+    400536: BSz 8
+    400538: BSz_end 8
+    400540: B1
+    400542: B1_end
+    400544: B2
+    400546: B2_end
+    400548: B3
+    400550: B3_end
+    400552: B4
+    400554: B4_end
+    400556: SSArmature
+    400558: B0
+    400560: B0_end
+    400562: B1x 9
+    400564: B1x_end 9
+    400566: B1y 9
+    400568: B1y_end 9
+    400570: B1z 9
+    400572: B1z_end 9
+    400574: B2x 9
+    400576: B2x_end 9
+    400578: B2y 9
+    400580: B2y_end 9
+    400582: B2z 9
+    400584: B2z_end 9
+    400586: B3x 9
+    400588: B3x_end 9
+    400590: B3y 9
+    400592: B3y_end 9
+    400594: B3z 9
+    400596: B3z_end 9
+    400598: bO
+    400600: bO_end
+    400602: S
+    400604: SArrows
+    400606: R
+    400608: S0
+    400610: SSR
+    400612: RCollider
+    2100000: ZMat
+    2100002: YMat
+    2100004: XMat
+    2100006: XQMat
+    2100008: YQMat
+    2100010: ZQMat
+    2100012: YQuadMat
+    2100014: XQuadMat
+    2100016: ZQuadMat
+    2100018: XArrowMat
+    2100020: YArrowMat
+    2100022: ZArrowMat
+    2100024: ScreenSpaceQuad
+    2100026: Material.001
+    2100028: ZeroMat
+    2100030: ScreenSpaceTransparent
+    2300000: ScreenSpaceQuad
+    2300002: R
+    2300004: SSR
+    2300006: RCollider
+    3300000: ScreenSpaceQuad
+    3300002: R
+    3300004: SSR
+    3300006: RCollider
+    4300000: Cone.006
+    4300002: Cone.005
+    4300004: Cone.004
+    4300006: Cone.008
+    4300008: Cone.003
+    4300010: Cone.002
+    4300012: Cone.001
+    4300014: Cone
+    4300016: Arrows7
+    4300018: Arrows6
+    4300020: Arrows5
+    4300022: Arrows4
+    4300024: Arrows3
+    4300026: Arrows2
+    4300028: Arrows1
+    4300030: Arrows0
+    4300032: ScreenSpaceQuad
+    4300034: Arrows8
+    4300036: SArrows
+    4300038: R
+    4300040: SSR
+    4300042: RCollider
+    9500000: //RootNode
+    13700000: Cone
+    13700002: Cone.001
+    13700004: Cone.002
+    13700006: Cone.003
+    13700008: Cone.004
+    13700010: Cone.005
+    13700012: Cone.006
+    13700014: Cone.008
+    13700016: Arrows0
+    13700018: Arrows1
+    13700020: Arrows2
+    13700022: Arrows3
+    13700024: Arrows4
+    13700026: Arrows5
+    13700028: Arrows6
+    13700030: Arrows7
+    13700032: Arrows8
+    13700034: ScreenSpaceQuad
+    13700036: SArrows
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 18
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 0
+    normalSmoothingSource: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

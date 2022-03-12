@@ -1,0 +1,124 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Test script for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TestClass} : UIWidgets.WidgetGeneration.TestBase<{0:SourceClass}>
+	{{
+		/// <summary>
+		/// Left ListView.
+		/// </summary>
+		public {0:ListViewClass} LeftListView;
+
+		/// <summary>
+		/// Right ListView.
+		/// </summary>
+		public {0:ListViewClass} RightListView;
+
+		/// <summary>
+		/// TileView.
+		/// </summary>
+		public {0:ListViewClass} TileView;
+
+		/// <summary>
+		/// TreeView.
+		/// </summary>
+		public {0:TreeViewClass} TreeView;
+{0:IfTable@
+		/// <summary>
+		/// Table.
+		/// </summary>
+		public [0:ListViewClass] Table;}
+
+		/// <summary>
+		/// TreeGraph.
+		/// </summary>
+		public {0:TreeGraphClass} TreeGraph;
+{0:IfAutocomplete@
+		/// <summary>
+		/// Autocomplete.
+		/// </summary>
+		public [0:AutocompleteClass] Autocomplete;}
+{0:IfAutocomplete@
+		/// <summary>
+		/// AutoCombobox.
+		/// </summary>
+		public [0:AutoComboboxClass] AutoCombobox;}
+
+		/// <summary>
+		/// Combobox.
+		/// </summary>
+		public {0:ComboboxClass} Combobox;
+
+		/// <summary>
+		/// ComboboxMultiselect.
+		/// </summary>
+		public {0:ComboboxClass} ComboboxMultiselect;
+
+		/// <summary>
+		/// ListView picker.
+		/// </summary>
+		public {0:PickerListViewClass} PickerListView;
+
+		/// <summary>
+		/// TreeView picker.
+		/// </summary>
+		public {0:PickerTreeViewClass} PickerTreeView;
+
+		UIWidgets.ObservableList<{0:SourceClass}> pickerListViewData;
+
+		UIWidgets.ObservableList<UIWidgets.TreeNode<{0:SourceClass}>> pickerTreeViewNodes;
+
+		/// <summary>
+		/// Init.
+		/// </summary>
+		public void Start()
+		{{
+			var list = GenerateList(4);
+
+			LeftListView.DataSource = list;
+			TileView.DataSource = list;
+
+			RightListView.DataSource = GenerateList(15);
+{0:IfTable@
+			Table.DataSource = GenerateList(50);}
+
+			TreeView.Nodes = GenerateNodes(new System.Collections.Generic.List<int>() {{ 10, 5, 5, }});
+
+			TreeGraph.Nodes = GenerateNodes(new System.Collections.Generic.List<int>() {{ 2, 3, 2, }});
+{0:IfAutocomplete@
+			Autocomplete.DataSource = GenerateList(50).ToList();}
+{0:IfAutocomplete@
+			var ac_list = GenerateList(50);
+			AutoCombobox.Combobox.ListView.DataSource = ac_list;
+			AutoCombobox.Autocomplete.DataSource = ac_list.ListReference();}
+
+			Combobox.ListView.DataSource = GenerateList(20);
+			ComboboxMultiselect.ListView.DataSource = GenerateList(20);
+
+			pickerListViewData = GenerateList(20);
+
+			pickerTreeViewNodes = GenerateNodes(new System.Collections.Generic.List<int>() {{ 10, 5, 3, }});
+		}}
+
+		/// <summary>
+		/// Show ListView picker.
+		/// </summary>
+		public void ShowPickerListView()
+		{{
+			var picker = PickerListView.Clone();
+			picker.ListView.DataSource = pickerListViewData;
+			picker.Show(null, LeftListView.DataSource.Add);
+		}}
+
+		/// <summary>
+		/// Show TreeView picker.
+		/// </summary>
+		public void ShowPickerTreeView()
+		{{
+			var picker = PickerTreeView.Clone();
+			picker.TreeView.Nodes = pickerTreeViewNodes;
+			picker.Show(null, TreeView.Nodes.Add);
+		}}
+	}}
+}}

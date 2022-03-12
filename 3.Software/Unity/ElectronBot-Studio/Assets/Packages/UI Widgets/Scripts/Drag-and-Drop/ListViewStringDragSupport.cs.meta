@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a62bf75ba8df9de4d8985c7a42598734
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Cursors: {instanceID: 0}
+  - AllowDropCursor: {instanceID: 0}
+  - DeniedDropCursor: {instanceID: 0}
+  - DefaultCursorTexture: {instanceID: 0}
+  - handle: {instanceID: 0}
+  - ListView: {instanceID: 0}
+  - DragInfo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,10 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// ListView drop support for the {0:SourceClassShortName}.
+	/// </summary>
+	[UnityEngine.RequireComponent(typeof({0:ListViewClass}))]
+	public partial class {0:ListViewDropSupportClass} : UIWidgets.ListViewCustomDropSupport<{0:ListViewClass}, {0:ListViewComponentClass}, {0:SourceClass}>
+	{{
+	}}
+}}

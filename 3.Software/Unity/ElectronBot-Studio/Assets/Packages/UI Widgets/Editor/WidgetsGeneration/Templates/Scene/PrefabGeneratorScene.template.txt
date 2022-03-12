@@ -1,0 +1,239 @@
+﻿#if UNITY_EDITOR
+namespace {0:WidgetsNamespace}
+{{
+	public partial class {0:PrefabGeneratorClass} : UIWidgets.WidgetGeneration.PrefabGenerator
+	{{
+		/// <summary>
+		/// Generate test scene.
+		/// </summary>
+		protected override void GenerateSceneContent()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.Scene);
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.SceneGeneratorHelper>();
+
+			foreach (var x in helper.Accordion.DataSource)
+			{{
+				var text = x.ToggleObject.transform.Find("Text").gameObject;
+				var label = AddLabel(text, x.ToggleObject.name, 14, true);
+				SetTextStyle(label, UnityEngine.FontStyle.Bold);
+				SetTextAlignment(label, UnityEngine.TextAnchor.MiddleCenter);
+			}}
+
+			var target = helper.Canvas.AddComponent<{0:TestClass}>();
+
+			target.RootCanvas = helper.Canvas;
+
+			target.Sprites = UIWidgets.UtilitiesEditor.GetAssets<UnityEngine.Sprite>("t:Sprite l:UiwidgetsSpriteAsset");
+			target.Sprites.AddRange(new UnityEngine.Sprite[] {{ null, null }});
+			target.Textures = UIWidgets.UtilitiesEditor.GetAssets<UnityEngine.Texture2D>("t:Texture2D l:UiwidgetsTexture2DAsset");
+			target.Textures.AddRange(new UnityEngine.Texture2D[] {{ null, null }});
+
+			target.StyleDefault = UIWidgets.PrefabsTemplates.Instance.StyleDefault;
+			target.StyleBlue = UIWidgets.PrefabsTemplates.Instance.StyleBlue;
+			
+			var drag_info = GenerateSceneDragInfo(target, helper);
+			GenerateSceneButtons(target, helper);
+			GenerateScenePickers(target, helper);
+			GenerateSceneListView(target, helper, drag_info);
+			GenerateSceneTileView(target, helper, drag_info);
+			GenerateSceneTreeView(target, helper, drag_info);
+
+			GenerateSceneTable(target, helper, drag_info);
+
+			GenerateSceneTreeGraph(target, helper);
+
+			GenerateSceneAutocomplete(target, helper);
+			GenerateSceneCombobox(target, helper);
+			GenerateSceneComboboxMultiselect(target, helper);
+			GenerateSceneAutoCombobox(target, helper);
+
+			go.transform.DetachChildren();
+
+			UnityEngine.Object.DestroyImmediate(go);
+
+			var style = UIWidgets.PrefabsMenu.Instance.DefaultStyle;
+			if (style != null)
+			{{
+				style.ApplyTo(target.RootCanvas);
+			}}
+		}}
+
+		void GenerateSceneButtons({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper)
+		{{
+			AddListener(helper.ListViewButton.onClick, target.ShowPickerListView);
+			AddListener(helper.TreeViewButton.onClick, target.ShowPickerTreeView);
+			AddListener(helper.StyleDefaultButton.onClick, target.SetDefaultStyle);
+			AddListener(helper.StyleBlueButton.onClick, target.SetBlueStyle);
+
+			var label_plv = AddLabel(helper.ListViewButton.transform.Find("Text").gameObject, "Add item with ListViewPicker", 14);
+			label_plv.color = UnityEngine.Color.black;
+			SetTextStyle(label_plv, UnityEngine.FontStyle.Bold);
+			SetTextAlignment(label_plv, UnityEngine.TextAnchor.MiddleCenter);
+
+			var label_ptv = AddLabel(helper.TreeViewButton.transform.Find("Text").gameObject, "Add node with TreeViewPicker", 14);
+			label_ptv.color = UnityEngine.Color.black;
+			SetTextStyle(label_ptv, UnityEngine.FontStyle.Bold);
+			SetTextAlignment(label_ptv, UnityEngine.TextAnchor.MiddleCenter);
+
+			var label_sd = AddLabel(helper.StyleDefaultButton.transform.Find("Text").gameObject, "Set Default Style", 14);
+			label_sd.color = UnityEngine.Color.black;
+			SetTextStyle(label_sd, UnityEngine.FontStyle.Bold);
+			SetTextAlignment(label_sd, UnityEngine.TextAnchor.MiddleCenter);
+
+			var label_sb = AddLabel(helper.StyleBlueButton.transform.Find("Text").gameObject, "Set Blue Style", 14);
+			label_sb.color = UnityEngine.Color.black;
+			SetTextStyle(label_sb, UnityEngine.FontStyle.Bold);
+			SetTextAlignment(label_sb, UnityEngine.TextAnchor.MiddleCenter);
+		}}
+
+		void GenerateScenePickers({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper)
+		{{
+			var ptv_prefab = PrefabsMenu.PickerTreeView;
+			var ptv = UnityEngine.Object.Instantiate(ptv_prefab) as UnityEngine.GameObject;
+			ptv.name = ptv_prefab.name;
+			var ptv_rt = ptv.transform as UnityEngine.RectTransform;
+			ptv_rt.SetParent(helper.Canvas.transform, false);
+			ptv_rt.SetAsFirstSibling();
+			ptv_rt.anchoredPosition = UnityEngine.Vector2.zero;
+			target.PickerTreeView = ptv.GetComponent<{0:PickerTreeViewClass}>();
+			ptv.SetActive(false);
+
+			var plv_prefab = PrefabsMenu.PickerListView;
+			var plv = UnityEngine.Object.Instantiate(plv_prefab) as UnityEngine.GameObject;
+			plv.name = plv_prefab.name;
+			var plv_rt = plv.transform as UnityEngine.RectTransform;
+			plv_rt.SetParent(helper.Canvas.transform, false);
+			plv_rt.SetAsFirstSibling();
+			plv_rt.anchoredPosition = UnityEngine.Vector2.zero;
+			target.PickerListView = plv.GetComponent<{0:PickerListViewClass}>();
+			plv.SetActive(false);
+		}}
+
+		{0:ListViewComponentClass} GenerateSceneDragInfo({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper)
+		{{
+			// drag info
+			var drag_prefab = PrefabsMenu.DragInfo;
+			var drag = UnityEngine.Object.Instantiate(drag_prefab) as UnityEngine.GameObject;
+			drag.name = drag_prefab.name;
+			drag.transform.SetParent(helper.Canvas.transform, false);
+			drag.transform.SetAsFirstSibling();
+			var drag_info = drag.GetComponent<{0:ListViewComponentClass}>();
+			drag.SetActive(false);
+
+			return drag_info;
+		}}
+
+		void GenerateSceneListView({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper, {0:ListViewComponentClass} dragInfo)
+		{{
+			var lv_prefab = PrefabsMenu.ListView;
+
+			// tooltip
+			var tooltip_go = UnityEngine.Object.Instantiate(PrefabsMenu.Tooltip) as UnityEngine.GameObject;
+			var tooltip = tooltip_go.GetComponent<{0:TooltipClass}>();
+			tooltip_go.name = "Tooltip";
+			tooltip_go.transform.SetParent(helper.Canvas.transform, false);
+			tooltip_go.SetActive(false);
+
+			// listview left
+			var lv_left = UnityEngine.Object.Instantiate(lv_prefab) as UnityEngine.GameObject;
+			lv_left.name = "Left" + lv_prefab.name;
+			lv_left.transform.SetParent(helper.ListsParent, false);
+			target.LeftListView = lv_left.GetComponent<{0:ListViewClass}>();
+			target.LeftListView.DefaultItem.GetComponent<{0:ListViewDragSupportClass}>().DragInfo = dragInfo;
+			target.LeftListView.DefaultItem.Tooltip = tooltip;
+
+			var lv_left_le = lv_left.AddComponent<UnityEngine.UI.LayoutElement>();
+			lv_left_le.minWidth = 0;
+			lv_left_le.flexibleWidth = 1;
+
+			// listview right
+			var lv_right = UnityEngine.Object.Instantiate(lv_prefab) as UnityEngine.GameObject;
+			lv_right.name = "Right" + lv_prefab.name;
+			lv_right.transform.SetParent(helper.ListsParent, false);
+			target.RightListView = lv_right.GetComponent<{0:ListViewClass}>();
+			target.RightListView.DefaultItem.GetComponent<{0:ListViewDragSupportClass}>().DragInfo = dragInfo;
+
+			var lv_right_le = lv_right.AddComponent<UnityEngine.UI.LayoutElement>();
+			lv_right_le.minWidth = 0;
+			lv_right_le.flexibleWidth = 1;
+
+			AddLabel(helper.LabelListView, "The left ListView and TileView display the same list.\r\nYou can Drag-and-Drop items between ListView, TileView and TreeView.", 19);
+		}}
+
+		void GenerateSceneTileView({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper, {0:ListViewComponentClass} dragInfo)
+		{{
+			var tile_prefab = PrefabsMenu.TileView;
+			var tile = UnityEngine.Object.Instantiate(tile_prefab) as UnityEngine.GameObject;
+			tile.name = tile_prefab.name;
+			tile.transform.SetParent(helper.TileViewParent, false);
+			target.TileView = tile.GetComponent<{0:ListViewClass}>();
+			target.TileView.DefaultItem.GetComponent<{0:ListViewDragSupportClass}>().DragInfo = dragInfo;
+
+			var tile_le = tile.AddComponent<UnityEngine.UI.LayoutElement>();
+			tile_le.minHeight = 0;
+			tile_le.flexibleHeight = 2;
+		}}
+
+		void GenerateSceneTreeView({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper, {0:ListViewComponentClass} dragInfo)
+		{{
+			var tree_prefab = PrefabsMenu.TreeView;
+			var tree = UnityEngine.Object.Instantiate(tree_prefab) as UnityEngine.GameObject;
+			tree.name = tree_prefab.name;
+			tree.transform.SetParent(helper.TreeViewParent, false);
+			target.TreeView = tree.GetComponent<{0:TreeViewClass}>();
+			target.TreeView.DefaultItem.GetComponent<{0:TreeViewNodeDragSupportClass}>().DragInfo = dragInfo;
+
+			var le_tree = tree.AddComponent<UnityEngine.UI.LayoutElement>();
+			le_tree.minWidth = 100;
+			le_tree.preferredWidth = 100;
+			le_tree.flexibleWidth = 1;
+		}}
+
+		void GenerateSceneTreeGraph({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper)
+		{{
+			var graph_prefab = PrefabsMenu.TreeGraph;
+			var graph = UnityEngine.Object.Instantiate(graph_prefab) as UnityEngine.GameObject;
+			graph.name = graph_prefab.name;
+			graph.transform.SetParent(helper.TreeGraphParent, false);
+			target.TreeGraph = graph.GetComponent<{0:TreeGraphClass}>();
+
+			var graph_rt = graph.transform as UnityEngine.RectTransform;
+			graph_rt.anchoredPosition = new UnityEngine.Vector2(0, 0);
+
+			AddLabel(helper.LabelTreeGraph, "Graph nodes can be dragged.");
+		}}
+
+		void GenerateSceneComboboxMultiselect({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper)
+		{{
+			var comboboxmultiselect_prefab = PrefabsMenu.ComboboxMultiselect;
+			var comboboxmultiselect = UnityEngine.Object.Instantiate(comboboxmultiselect_prefab) as UnityEngine.GameObject;
+			comboboxmultiselect.name = comboboxmultiselect_prefab.name;
+			comboboxmultiselect.transform.SetParent(helper.AutocompleteParent, false);
+			target.ComboboxMultiselect = comboboxmultiselect.transform.Find("Combobox").GetComponent<{0:ComboboxClass}>();
+
+			var comboboxmultiselect_rt = comboboxmultiselect.transform as UnityEngine.RectTransform;
+			comboboxmultiselect_rt.anchorMin = new UnityEngine.Vector2(0f, 1f);
+			comboboxmultiselect_rt.anchorMax = new UnityEngine.Vector2(1f, 1f);
+			comboboxmultiselect_rt.anchoredPosition = new UnityEngine.Vector2(0, -375);
+			comboboxmultiselect_rt.sizeDelta = new UnityEngine.Vector2(0f, 40f);
+
+			AddLabel(helper.LabelComboboxMultiselect, "Combobox with multiple selection");
+		}}
+
+		void GenerateSceneCombobox({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper)
+		{{
+			var combobox_prefab = PrefabsMenu.Combobox;
+			var combobox = UnityEngine.Object.Instantiate(combobox_prefab) as UnityEngine.GameObject;
+			combobox.name = combobox_prefab.name;
+			combobox.transform.SetParent(helper.AutocompleteParent, false);
+			target.Combobox = combobox.transform.Find("Combobox").GetComponent<{0:ComboboxClass}>();
+
+			var combobox_rt = combobox.transform as UnityEngine.RectTransform;
+			combobox_rt.anchoredPosition = new UnityEngine.Vector2(0, -280);
+
+			AddLabel(helper.LabelCombobox, "Combobox");
+		}}
+	}}
+}}
+#endif

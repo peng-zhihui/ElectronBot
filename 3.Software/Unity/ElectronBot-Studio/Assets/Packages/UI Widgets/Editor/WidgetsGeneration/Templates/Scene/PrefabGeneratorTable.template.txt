@@ -1,0 +1,95 @@
+﻿#if UNITY_EDITOR
+namespace {0:WidgetsNamespace}
+{{
+	public partial class {0:PrefabGeneratorClass} : UIWidgets.WidgetGeneration.PrefabGenerator
+	{{
+		void GenerateSceneTable({0:TestClass} target, UIWidgets.WidgetGeneration.SceneGeneratorHelper helper, {0:ListViewComponentClass} dragInfo)
+		{{
+			var table_prefab = PrefabsMenu.Table;
+			var table = UnityEngine.Object.Instantiate(table_prefab) as UnityEngine.GameObject;
+			table.name = table_prefab.name;
+			table.transform.SetParent(helper.TableParent, false);
+			target.Table = table.GetComponent<{0:ListViewClass}>();
+			target.Table.ListType = UIWidgets.ListViewType.ListViewWithVariableSize;
+			target.Table.DefaultItem.GetComponent<{0:ListViewDragSupportClass}>().DragInfo = dragInfo;
+
+			var table_rt = table.transform as UnityEngine.RectTransform;
+			table_rt.anchorMin = new UnityEngine.Vector2(0, 0);
+			table_rt.anchorMax = new UnityEngine.Vector2(1, 1);
+			table_rt.sizeDelta = new UnityEngine.Vector2(0, -35f);
+			table_rt.anchoredPosition = new UnityEngine.Vector2(0, -35f);
+
+			AddLabel(helper.LabelTable, "Columns can be resized and reordered.\r\nClick on column header to sort items.");
+		}}
+
+		/// <summary>
+		/// Generate Table.
+		/// </summary>
+		/// <returns>Table.</returns>
+		protected override UnityEngine.GameObject GenerateTable()
+		{{
+			var go = UIWidgets.UtilitiesEditor.CreateGameObject(UIWidgets.PrefabsTemplates.Instance.Table);
+			go.name = "Table" + Info.ShortTypeName;
+
+			var helper = go.GetComponent<UIWidgets.WidgetGeneration.TableGeneratorHelper>();
+
+			var target = helper.Main.AddComponent<{0:ListViewClass}>();
+			target.Container = helper.Container;
+			target.ScrollRect = helper.ScrollRect;
+			target.StyleTable = true;
+
+			UIWidgets.Compatibility.SetViewport(target.ScrollRect, helper.Viewport);
+
+			var drop = target.gameObject.AddComponent<{0:ListViewDropSupportClass}>();
+			drop.DropIndicator = CreateDropIndicator(helper.Container.transform);
+
+			target.DefaultItem = CreateTableComponent(helper.DefaultItem);
+
+			CreateTableHeaderCells(target, helper.TableHeader);
+			target.Header = helper.TableHeader;
+
+			var drag = AddListViewDragSupport(helper.DefaultItem);
+			drag.ListView = target;
+
+			UnityEngine.Object.DestroyImmediate(helper);
+
+			return go;
+		}}
+
+		void CreateTableHeaderCells({0:ListViewClass} table, UIWidgets.TableHeader header)
+		{{{0:Fields@
+			var cell[0:FieldName] = CreateCell(header.transform, "[0:FieldName]", UnityEngine.TextAnchor.MiddleCenter);
+			var t[0:FieldName] = CreateObject<[1:TextType]>(cell[0:FieldName], "Text");
+			t[0:FieldName].text = "[0:FieldName]";
+			t[0:FieldName].fontSize = 20;
+			t[0:FieldName].color = UnityEngine.Color.white;
+
+			var style[0:FieldName] = cell[0:FieldName].gameObject.AddComponent<UIWidgets.Styles.StyleSupportHeaderCell>();
+			style[0:FieldName].Text = t[0:FieldName].gameObject;
+			style[0:FieldName].Background = cell[0:FieldName].GetComponent<UnityEngine.UI.Image>();
+}{0:TextFields@
+			var cell[0:FieldName]Button = cell[0:FieldName].gameObject.AddComponent<UnityEngine.UI.Button>();
+			AddListener(cell[0:FieldName]Button.onClick, table.SortBy[0:FieldName]);
+}
+		}}
+
+		static {0:ListViewComponentClass} CreateTableComponent(UnityEngine.GameObject go)
+		{{
+			var item = go.AddComponent<{0:ListViewComponentClass}>();
+{0:Fields@
+			var cell[0:FieldName] = CreateCell(item.transform, "[0:FieldName]");
+			item.[0:WidgetFieldName] = CreateObject<[0:WidgetClass]>(cell[0:FieldName]);}
+{0:TextFields@
+			item.[0:WidgetFieldName].text = "[0:FieldName]";
+			item.[0:WidgetFieldName].fontSize = 14;}
+{0:FieldsSprite@
+			item.[0:WidgetFieldName].preserveAspect = true;}
+{0:ImageFields@
+			AddLayoutElement(item.[0:WidgetFieldName].gameObject);
+			cell[0:FieldName].GetComponent<UnityEngine.UI.HorizontalLayoutGroup>().childAlignment = UnityEngine.TextAnchor.MiddleCenter;
+}
+			return item;
+		}}
+	}}
+}}
+#endif

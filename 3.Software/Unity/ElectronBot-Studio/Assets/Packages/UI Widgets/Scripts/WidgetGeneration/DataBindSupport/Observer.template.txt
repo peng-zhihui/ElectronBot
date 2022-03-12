@@ -1,0 +1,39 @@
+#if UIWIDGETS_DATABIND_SUPPORT
+namespace {0:Namespace}
+{{
+	using Slash.Unity.DataBind.Foundation.Observers;
+
+	/// <summary>
+	/// Observes value changes of the {0:FieldName} of an {0:TargetShortName}.
+	/// </summary>
+	public class {0:TargetShortName}{0:FieldName}Observer : ComponentDataObserver<{0:TargetFullName}, {0:FieldType}>
+	{{
+		/// <inheritdoc />
+		protected override void AddListener({0:TargetFullName} target)
+		{{
+{0:Listeners@
+			target.[0:EventName].AddListener([0:FuncName]);}
+		}}
+
+		/// <inheritdoc />
+		protected override {0:FieldType} GetValue({0:TargetFullName} target)
+		{{
+			return target.{0:FieldName};
+		}}
+
+		/// <inheritdoc />
+		protected override void RemoveListener({0:TargetFullName} target)
+		{{
+{0:Listeners@
+			target.[0:EventName].RemoveListener([0:FuncName]);}
+		}}
+
+{0:Listeners@
+		void [0:FuncName]([0:Arguments])
+		[[
+			OnTargetValueChanged();
+		]]
+}
+	}}
+}}
+#endif

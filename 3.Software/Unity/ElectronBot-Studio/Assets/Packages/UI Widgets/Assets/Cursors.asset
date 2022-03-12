@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c174a6855ae0fe48a7ec42aac98f309, type: 3}
+  m_Name: Cursors
+  m_EditorClassIdentifier: 
+  Default:
+    texture: {fileID: 0}
+    hotspot: {x: 0, y: 0}
+  Allowed:
+    texture: {fileID: 2800000, guid: 2b808f7c3d6a24b4885fde391543fe58, type: 3}
+    hotspot: {x: 4, y: 2}
+  Denied:
+    texture: {fileID: 2800000, guid: 7200c69591c3f4144ac09f5347b5e18d, type: 3}
+    hotspot: {x: 4, y: 2}
+  NorthSouthArrow:
+    texture: {fileID: 2800000, guid: 1499b07727031c3449372d55f72dca6f, type: 3}
+    hotspot: {x: 16, y: 16}
+  EastWestArrow:
+    texture: {fileID: 2800000, guid: 6849a3e9e15bf7d4c98cd8bb5762c7bb, type: 3}
+    hotspot: {x: 16, y: 16}
+  NorthEastSouthWestArrow:
+    texture: {fileID: 2800000, guid: f5f1888064a79ee41afa5d08fd6d1a40, type: 3}
+    hotspot: {x: 16, y: 16}
+  NorthWestSouthEastArrow:
+    texture: {fileID: 2800000, guid: a11340f3ef0069e41bf169ad8846defc, type: 3}
+    hotspot: {x: 16, y: 16}
+  NorthWestRotateArrow:
+    texture: {fileID: 2800000, guid: e921cd3ff9141e74183848f396cf3494, type: 3}
+    hotspot: {x: 16, y: 16}
+  NorthEastRotateArrow:
+    texture: {fileID: 2800000, guid: e921cd3ff9141e74183848f396cf3494, type: 3}
+    hotspot: {x: 16, y: 16}
+  SouthWestRotateArrow:
+    texture: {fileID: 2800000, guid: e921cd3ff9141e74183848f396cf3494, type: 3}
+    hotspot: {x: 16, y: 16}
+  SouthEastRotateArrow:
+    texture: {fileID: 2800000, guid: e921cd3ff9141e74183848f396cf3494, type: 3}
+    hotspot: {x: 16, y: 16}

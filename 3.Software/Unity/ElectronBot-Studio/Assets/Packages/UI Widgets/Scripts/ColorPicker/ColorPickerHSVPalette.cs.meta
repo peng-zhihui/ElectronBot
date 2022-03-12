@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f5ada11ac6f1694429c92aa7fb1cd809
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - palette: {instanceID: 0}
+  - paletteShader: {fileID: 4800000, guid: 924310371a4ad61468c5bd37d72c42e2, type: 3}
+  - circleShader: {fileID: 4800000, guid: 74fd1b414e6efae4c8b10e6efff6f5d6, type: 3}
+  - paletteCursor: {instanceID: 0}
+  - slider: {instanceID: 0}
+  - sliderBackground: {instanceID: 0}
+  - sliderShader: {fileID: 4800000, guid: a7f0605273913b241ab9edfd96624ecb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

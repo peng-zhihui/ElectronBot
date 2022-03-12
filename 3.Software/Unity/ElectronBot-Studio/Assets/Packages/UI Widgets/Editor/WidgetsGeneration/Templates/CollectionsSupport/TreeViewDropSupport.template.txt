@@ -1,0 +1,10 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// TreeView drop support for the {0:SourceClassShortName}.
+	/// </summary>
+	[UnityEngine.RequireComponent(typeof({0:TreeViewClass}))]
+	public partial class {0:TreeViewDropSupportClass} : UIWidgets.TreeViewCustomDropSupport<{0:TreeViewClass}, {0:TreeViewComponentClass}, {0:SourceClass}>
+	{{
+	}}
+}}

@@ -1,0 +1,41 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// Test script for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TestClass} : UIWidgets.WidgetGeneration.TestBase<{0:SourceClass}>
+	{{
+		/// <summary>
+		/// Generate item.
+		/// </summary>
+		/// <param name="index">Item index.</param>
+		/// <returns>Item.</returns>
+		protected override {0:SourceClass} GenerateItem(int index)
+		{{
+			return new {0:SourceClass}()
+			{{{0:FieldsString@
+				[0:FieldName] = "[0:FieldName] " + index.ToString("0000"),}{0:FieldsInt@
+				[0:FieldName] = UnityEngine.Random.Range(0, 100000),}{0:FieldsFloat@
+				[0:FieldName] = UnityEngine.Random.Range(-1000f, 1000f),}{0:FieldsSprite@
+				[0:FieldName] = GetSprite(),}{0:FieldsTexture2D@
+				[0:FieldName] = GetTexture(),}{0:FieldsColor@
+				[0:FieldName] = RandomColor(),}
+			}};
+		}}
+
+		/// <summary>
+		/// Generate item with the specified name.
+		/// </summary>
+		/// <param name="name">Item name.</param>
+		/// <param name="index">Item index.</param>
+		/// <returns>Item.</returns>
+		protected override {0:SourceClass} GenerateItem(string name, int index)
+		{{
+			var item = GenerateItem(index);
+{0:FieldsStringFirst@
+			item.[0:FieldName] = name;
+}
+			return item;
+		}}
+	}}
+}}

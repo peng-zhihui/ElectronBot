@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2f084acb63c0bd4428566d61e5e88d5a
+labels:
+- Spinner
+- Widget
+- DomainUpDown
+- Uiwidgets
+- NumericUpDown
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

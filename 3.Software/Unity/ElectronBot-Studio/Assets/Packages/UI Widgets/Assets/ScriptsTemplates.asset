@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac1e7a6390b2434ca6f71017989d3a4, type: 3}
+  m_Name: ScriptsTemplates
+  m_EditorClassIdentifier: 
+  Autocomplete: {fileID: 4900000, guid: b60c7ebdd251b924c9ec09e0d601c078, type: 3}
+  AutoCombobox: {fileID: 4900000, guid: d05e55267b2b120409a78b0feb94ba6d, type: 3}
+  Combobox: {fileID: 4900000, guid: 758c905bf0d95c24dac3bdc11ff7c24b, type: 3}
+  ListView: {fileID: 4900000, guid: 89fab6960bd1163419c1c03129ee7de9, type: 3}
+  ListViewComponent: {fileID: 4900000, guid: 4247c1f5d3b6dd0499d0a49028c73285, type: 3}
+  TreeGraph: {fileID: 4900000, guid: 71cadf787e75fa542a097cf6950bb656, type: 3}
+  TreeGraphComponent: {fileID: 4900000, guid: 770a6a99e929bba49993c4f51022ebd3, type: 3}
+  TreeView: {fileID: 4900000, guid: fbd5e9afbbb11084d88a66c6b04695fb, type: 3}
+  TreeViewComponent: {fileID: 4900000, guid: 278d16f0a88c3654a90dd9841c873fc2, type: 3}
+  Comparers: {fileID: 4900000, guid: 61eab2358de7b78408e56e8955c295b0, type: 3}
+  ListViewDragSupport: {fileID: 4900000, guid: 2d156cfba3bf3db49ac31b927d04d4b2, type: 3}
+  ListViewDropSupport: {fileID: 4900000, guid: a46656bbd8783314e81668e9a26d0857, type: 3}
+  Tooltip: {fileID: 4900000, guid: 69753b6a7bf0f9544acbbf9f4f3ce6e1, type: 3}
+  TooltipViewer: {fileID: 4900000, guid: c9da49a52497bc34ca18329bbe38205d, type: 3}
+  TreeViewDropSupport: {fileID: 4900000, guid: bd1a0cdf719283e4a809376a4d74caf8, type: 3}
+  TreeViewNodeDragSupport: {fileID: 4900000, guid: a10ad236a00a64341b39a36fc8ad1e6a,
+    type: 3}
+  TreeViewNodeDropSupport: {fileID: 4900000, guid: 29de95043b6c02343a3982912e4a3d9b,
+    type: 3}
+  PickerListView: {fileID: 4900000, guid: 8f1b3e52d3aa5d745b6e523f18d15207, type: 3}
+  PickerTreeView: {fileID: 4900000, guid: 928d7757bd1459b44a167e330ba371b8, type: 3}
+  Test: {fileID: 4900000, guid: 09e59b3873284784293d32faf413c357, type: 3}
+  TestItem: {fileID: 4900000, guid: 412fee389ba16ab428dfca2b275aa544, type: 3}
+  TestItemOff: {fileID: 4900000, guid: 029c52c9c4a36a6489ded78b68736a3a, type: 3}
+  MenuOptions: {fileID: 4900000, guid: b98c466936342d3419295fe50e5cd212, type: 3}
+  PrefabGenerator: {fileID: 4900000, guid: 957c0d1dd4a2c8c48a6d11c43386ff46, type: 3}
+  PrefabGeneratorAutocomplete: {fileID: 4900000, guid: 874100ea99c23a146b7fcd0d61aeed6e,
+    type: 3}
+  PrefabGeneratorAutocompleteOff: {fileID: 4900000, guid: 7d3ee310699cbc645ac4d9b7ad9ea756,
+    type: 3}
+  PrefabGeneratorTable: {fileID: 4900000, guid: b716806475b6d134eaea5043c557c554,
+    type: 3}
+  PrefabGeneratorTableOff: {fileID: 4900000, guid: bdd0860350501ce498e9e1d18ae76cd0,
+    type: 3}
+  PrefabGeneratorScene: {fileID: 4900000, guid: dc46e129f8dd89d43a215112cfcbd3a3,
+    type: 3}

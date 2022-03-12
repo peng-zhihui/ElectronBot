@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 090ef637733ba684eadcab609b14c6a8
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - slider: {instanceID: 0}
+  - sliderBackground: {instanceID: 0}
+  - defaultShaderHorizontal: {fileID: 4800000, guid: 2f245e4ec22b9244ca42a5a9cb89e65e,
+      type: 3}
+  - defaultShaderVertical: {fileID: 4800000, guid: a7f0605273913b241ab9edfd96624ecb,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

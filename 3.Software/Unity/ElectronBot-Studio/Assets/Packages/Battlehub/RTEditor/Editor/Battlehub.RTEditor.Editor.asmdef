@@ -1,0 +1,17 @@
+{
+    "name": "Battlehub.RTEditor.Editor",
+    "references": [
+        "GUID:fb20bc2d30583e34fba2eb37c20bd497"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

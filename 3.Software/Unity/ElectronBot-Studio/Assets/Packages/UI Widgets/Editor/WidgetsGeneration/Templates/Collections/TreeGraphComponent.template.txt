@@ -1,0 +1,60 @@
+﻿namespace {0:WidgetsNamespace}
+{{
+	/// <summary>
+	/// TreeGraph component for the {0:SourceClassShortName}.
+	/// </summary>
+	public partial class {0:TreeGraphComponentClass} : UIWidgets.TreeGraphComponent<{0:SourceClass}>
+	{{{0:Fields@
+		/// <summary>
+		/// The [0:FieldName].
+		/// </summary>
+		public [0:WidgetClass] [0:WidgetFieldName];
+}
+		/// <summary>
+		/// Init graphics foreground.
+		/// </summary>
+		protected override void GraphicsForegroundInit()
+		{{
+			if (GraphicsForegroundVersion == 0)
+			{{
+				graphicsForeground = new UnityEngine.UI.Graphic[] {{ {0:TextFields@UIWidgets.UtilitiesUI.GetGraphic([0:WidgetFieldName]), } }};
+				if (!UIWidgets.UtilitiesCollections.AllNull(graphicsForeground))
+				{{
+					GraphicsForegroundVersion = 1;
+				}}
+			}}
+		}}
+
+		/// <summary>
+		/// Set data.
+		/// </summary>
+		/// <param name="node">Node.</param>
+		public override void SetData(UIWidgets.TreeNode<{0:SourceClass}> node)
+		{{
+			Node = node;{0:Fields@
+
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = Node.Item.[0:FieldName][0:FieldFormat];
+			]]}{0:ImageFieldsNullable@
+
+			// set transparent color if no icon
+			if ([0:WidgetFieldName] != null)
+			[[
+				[0:WidgetFieldName].color = ([0:WidgetFieldName].[0:WidgetValueField] == null) ? UnityEngine.Color.clear : UnityEngine.Color.white;
+			]]}
+		}}
+
+		/// <summary>
+		/// Called when item moved to cache, you can use it free used resources.
+		/// </summary>
+		public override void MovedToCache()
+		{{{0:ImageFieldsNullable@
+			if ([0:FieldName] != null)
+			[[
+				[0:WidgetFieldName].[0:WidgetValueField] = null;
+			]]
+}
+		}}
+	}}
+}}

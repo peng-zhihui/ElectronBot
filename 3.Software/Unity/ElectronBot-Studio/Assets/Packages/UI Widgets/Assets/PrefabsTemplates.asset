@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a10eb8c41008c439fd173e1d17ae65, type: 3}
+  m_Name: PrefabsTemplates
+  m_EditorClassIdentifier: 
+  Autocomplete: {fileID: 102778, guid: c3a726d7256a1a54a9111ba8cd74faa6, type: 2}
+  Combobox: {fileID: 126136, guid: eb68b106de5784b4a9f4d42ec8ecc447, type: 2}
+  ComboboxMultiselect: {fileID: 129936, guid: 7200c1a0363be984497203fd11d641a2, type: 2}
+  DragInfo: {fileID: 175636, guid: 97854714e2c6696469097512c0fe697b, type: 2}
+  ListView: {fileID: 122352, guid: 6152f06e8497c7e4fb3240c1285df53a, type: 2}
+  PickerListView: {fileID: 127680, guid: 088ff5f48f87fab47aebd9ae62b821e4, type: 2}
+  PickerTreeView: {fileID: 139144, guid: 3aeab1a49b0c4eb4c94bc813540fde5b, type: 2}
+  Scene: {fileID: 1249212676156934, guid: 6b310b905d67cc3458f66428ef8fbcf8, type: 2}
+  Table: {fileID: 190118, guid: b10b7177272a5304caf2370fec76803b, type: 2}
+  TileView: {fileID: 100372, guid: 39b137aa840da9640a143a44538f0bb7, type: 2}
+  TreeGraph: {fileID: 155996, guid: 993d062021d9b5642a114fd0c53e709b, type: 2}
+  Tooltip: {fileID: 1700578226217504, guid: 0e9134225ef04884c9166f2bbc00bdd7, type: 2}
+  TreeView: {fileID: 1883122194458702, guid: 33a70010632654f4fbd64a2c897b7b9c, type: 2}
+  StyleDefault: {fileID: 11400000, guid: 751451855dea6c748816d04abda49208, type: 2}
+  StyleBlue: {fileID: 11400000, guid: 329a51b283b91654fbb8ee16756b4438, type: 2}
