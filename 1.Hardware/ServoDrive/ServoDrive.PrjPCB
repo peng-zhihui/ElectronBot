@@ -80,10 +80,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SPYPGENJ
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for ServoDrive\Design Rule Check - ServoDrive.html
-DItemRevisionGUID=
-
 [SearchPath1]
 Path=E:\OneDrive\[软件配置备份]\Altium Designer\1.元件库\*.*
 IncludeSubFolders=1
@@ -246,7 +242,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=Adobe PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
