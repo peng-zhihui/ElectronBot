@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [SensorBoard.PrjPCB]
+   Generated File[SensorBoard.TXT]
+   Generated File[SensorBoard.LDP]
+   Generated File[SensorBoard.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 10:34:57 On ÖÜ¶þ 03-15

@@ -1,0 +1,272 @@
+*************************************************************
+FileName = ServoDrive-DK.GBR
+AutoAperture = True
+*************************************************************
+Generating : Keep-Out Layer
+      File : ServoDrive-DK.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : ServoDrive-DK.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom2
+      File : ServoDrive-DK.GBL
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 14
+      File : ServoDrive-DK.GM14
+
+    Adding Layer      : Mechanical 14
+
+
+Used DCodes :
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : ServoDrive-DK.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : ServoDrive-DK.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Top1
+      File : ServoDrive-DK.GTL
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : ServoDrive-DK.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : ServoDrive-DK.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : ServoDrive-DK.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : ServoDrive-DK.GPT
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : ServoDrive-DK.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 10
+      File : ServoDrive-DK.GM10
+
+    Adding Layer      : Mechanical 10
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : ServoDrive-DK.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : ServoDrive-DK.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : ServoDrive-DK.GPB
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : ServoDrive-DK.GD1
+
+    Adding Drill Pair : Top1-Bottom2
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : ServoDrive-DK.GG1
+
+    Adding Drill Pair : Top1-Bottom2
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D38
+*************************************************************
+

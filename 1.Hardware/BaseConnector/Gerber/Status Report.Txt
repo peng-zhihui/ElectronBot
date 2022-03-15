@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [BaseConnector.PrjPCB]
+   Generated File[BaseConnector-RoundHoles.TXT]
+   Generated File[BaseConnector-SlotHoles.TXT]
+   Generated File[BaseConnector.LDP]
+   Generated File[BaseConnector.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 10:33:45 On ÖÜ¶þ 03-15

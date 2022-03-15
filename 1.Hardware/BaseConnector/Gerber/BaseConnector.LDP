@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: E:\OnWorking\ElectronBot\1.Hardware\BaseConnector\BaseConnector.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=baseconnector-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=baseconnector-slotholes.txt|DrillLayers=gtl,gbl

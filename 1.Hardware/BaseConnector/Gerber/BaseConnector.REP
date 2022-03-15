@@ -1,0 +1,267 @@
+*************************************************************
+FileName = BaseConnector.GBR
+AutoAperture = True
+*************************************************************
+Generating : Mechanical 15
+      File : BaseConnector.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 14
+      File : BaseConnector.GM14
+
+    Adding Layer      : Mechanical 14
+
+
+Used DCodes :
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : BaseConnector.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 10
+      File : BaseConnector.GM10
+
+    Adding Layer      : Mechanical 10
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : BaseConnector.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : BaseConnector.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : BaseConnector.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : BaseConnector.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : BaseConnector.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : BaseConnector.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : BaseConnector.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : BaseConnector.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : BaseConnector.GPT
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : BaseConnector.GPB
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Bottom2
+      File : BaseConnector.GBL
+
+    Adding Layer      : Bottom2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Top1
+      File : BaseConnector.GTL
+
+    Adding Layer      : Top1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D13
+    D14
+    D15
+    D16
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : BaseConnector.GD1
+
+    Adding Drill Pair : Top1-Bottom2
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : BaseConnector.GG1
+
+    Adding Drill Pair : Top1-Bottom2
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D31
+*************************************************************
+

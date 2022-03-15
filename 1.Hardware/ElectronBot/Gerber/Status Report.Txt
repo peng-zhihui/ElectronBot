@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [ElectronBot.PrjPCB]
+   Generated File[ElectronBot.TXT]
+   Generated File[ElectronBot.LDP]
+   Generated File[ElectronBot.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 10:34:24 On ÖÜ¶þ 03-15

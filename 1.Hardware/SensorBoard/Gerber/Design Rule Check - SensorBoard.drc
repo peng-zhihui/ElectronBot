@@ -1,0 +1,57 @@
+Protel Design System Design Rule Check
+PCB File : E:\OnWorking\ElectronBot\1.Hardware\SensorBoard\SensorBoard.PcbDoc
+Date     : ÷‹“ª 03-14
+Time     : 10:36:46
+
+Processing Rule : Clearance Constraint (Gap=4mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (InNetClass('Logo')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=10000mil) (Preferred=4mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=50mil) (Preferred=10mil) ((InNet('VDD_SYS_3.3V') OR InNet('VDD_AV_3.3V') OR InNet('VDD_5V') OR InNet('VDD1V2-SYS') OR InNet('VDD1V1-EPHY') OR InNet('VDD-CPUX') OR InNet('VDD-CPUS') OR InNet('VDD-CPUFB') OR InNet('VCC-DRAM')))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mil) (Max=100mil) (Preferred=10mil) (InNetClass('Logo'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=50mil) (Preferred=10mil) ((InNet('AGND') OR InNet('GND')))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=8mil) (Max=10000mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=2mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:02

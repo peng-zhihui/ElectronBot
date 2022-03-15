@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [ServoDrive-DK.PrjPCB]
+   Generated File[ServoDrive-DK.TXT]
+   Generated File[ServoDrive-DK.LDP]
+   Generated File[ServoDrive-DK.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 10:36:12 On ÖÜ¶þ 03-15
