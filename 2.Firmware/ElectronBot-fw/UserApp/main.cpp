@@ -48,15 +48,15 @@ void Main(void)
 
             // get joint angles
             uint8_t* ptr = electron.GetExtraDataRxPtr();
-            if (!isEnabled && ptr[0] == 1)
+            if (isEnabled != (bool) ptr[0])
             {
-                isEnabled = true;
-                electron.SetJointEnable(electron.joint[1], true);
-                electron.SetJointEnable(electron.joint[2], true);
-                electron.SetJointEnable(electron.joint[3], true);
-                electron.SetJointEnable(electron.joint[4], true);
-                electron.SetJointEnable(electron.joint[5], true);
-                electron.SetJointEnable(electron.joint[6], true);
+                isEnabled = ptr[0];
+                electron.SetJointEnable(electron.joint[1], isEnabled);
+                electron.SetJointEnable(electron.joint[2], isEnabled);
+                electron.SetJointEnable(electron.joint[3], isEnabled);
+                electron.SetJointEnable(electron.joint[4], isEnabled);
+                electron.SetJointEnable(electron.joint[5], isEnabled);
+                electron.SetJointEnable(electron.joint[6], isEnabled);
             }
             for (int j = 0; j < 6; j++)
             {
