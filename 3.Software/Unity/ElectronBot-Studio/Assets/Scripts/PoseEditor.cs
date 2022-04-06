@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using SFB;
 
 public class PoseEditor : MonoBehaviour
 {
@@ -112,6 +113,9 @@ public class PoseEditor : MonoBehaviour
         frame.transform.Find("FilePath").GetComponent<Button>().onClick.RemoveAllListeners();
         frame.transform.Find("FilePath").GetComponent<Button>().onClick
             .AddListener(() => FilePathCallback(frame.GetComponent<FrameMeta>().id));
+        frame.transform.Find("FileDelete").GetComponent<Button>().onClick.RemoveAllListeners();
+        frame.transform.Find("FileDelete").GetComponent<Button>().onClick
+            .AddListener(() => FileDeleteCallback(frame.GetComponent<FrameMeta>().id));
 
         frame.transform.Find("FrameAdd").Find("Text (TMP)").GetComponent<TMP_Text>().text = "" + _id;
     }
@@ -137,7 +141,6 @@ public class PoseEditor : MonoBehaviour
             robot.GetComponent<RobotController>().targetAngleArmRollRight;
     }
 
-
     public void FilePathCallback(int _id)
     {
         var openFileName = new OpenFileName();
@@ -151,17 +154,23 @@ public class PoseEditor : MonoBehaviour
         openFileName.title = "选择文件";
         openFileName.flags = 0x00080000 | 0x00001000 | 0x00000800 | 0x00000008;
 
-        if (LocalDialog.GetSaveFileName(openFileName))
-        {
-            Debug.Log(openFileName.file);
+        LocalDialog.GetOFN(openFileName, (OpenFileName openFileName) => {
+
+            Debug.Log("Selected File = " + openFileName.file);
             GameObject frame = timelineFrames[_id];
             frame.GetComponent<FrameMeta>().filePath = openFileName.file;
             var splitFilePath = openFileName.file.Split('\\');
             frame.transform.Find("FilePath").Find("Text").GetComponent<Text>().text =
                 splitFilePath[splitFilePath.Length - 1];
-        }
+        });
     }
 
+    public void FileDeleteCallback(int _id)
+    {
+        GameObject frame = timelineFrames[_id];
+        frame.GetComponent<FrameMeta>().filePath = null;
+        frame.transform.Find("FileDelete").Find("Text").GetComponent<Text>().text = "选择文件";
+    }
     private RenderTexture CaptureCamera(RenderTexture _rt)
     {
         if (_rt != null)
@@ -213,19 +222,30 @@ public class OpenFileName
 
 public class LocalDialog
 {
-    [DllImport("Comdlg32.dll", SetLastError = true, ThrowOnUnmappableChar = true, CharSet = CharSet.Auto)]
-    public static extern bool GetOpenFileName([In, Out] OpenFileName ofn);
-
-    public static bool GetOFN([In, Out] OpenFileName ofn)
+    // [DllImport("Comdlg32.dll", SetLastError = true, ThrowOnUnmappableChar = true, CharSet = CharSet.Auto)]
+    // public static extern bool GetOpenFileName([In, Out] OpenFileName ofn);
+    public static bool GetOFN([In, Out] OpenFileName ofn, Action<OpenFileName> cb)
     {
-        return GetOpenFileName(ofn); //执行打开文件的操作
+        ExtensionFilter[] extensions = new [] {
+            new ExtensionFilter("Supported Files", "png", "jpg", "jpeg", "bmp", "mp4" ),
+        };
+        StandaloneFileBrowser.OpenFilePanelAsync("选择文件", "", extensions, false, (string[] paths) => { 
+            if (paths != null && paths.Length > 0) {
+                ofn.file = paths[0];
+            }
+            cb(ofn);
+        });
+        //return GetOpenFileName(ofn); //执行打开文件的操作
+        return true;
     }
 
-    [DllImport("Comdlg32.dll", SetLastError = true, ThrowOnUnmappableChar = true, CharSet = CharSet.Auto)]
-    public static extern bool GetSaveFileName([In, Out] OpenFileName ofn);
+    // [DllImport("Comdlg32.dll", SetLastError = true, ThrowOnUnmappableChar = true, CharSet = CharSet.Auto)]
+    // public static extern bool GetSaveFileName([In, Out] OpenFileName ofn);
 
     public static bool GetSFN([In, Out] OpenFileName ofn)
     {
-        return GetSaveFileName(ofn); //执行保存选中文件的操作
+        StandaloneFileBrowser.SaveFilePanelAsync("Save File", "", "", "", (string path) => {  });
+        //return GetSaveFileName(ofn); //执行保存选中文件的操作
+        return true;
     }
 }

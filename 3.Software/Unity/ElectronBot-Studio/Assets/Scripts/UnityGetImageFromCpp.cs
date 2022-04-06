@@ -41,7 +41,11 @@ public class UnityGetImageFromCpp : MonoBehaviour
     void Start()
     {
         // while (!RunExecutable.is_camera_opened) ;
-        Native_OnInit();
+        try {
+            Native_OnInit();
+        } catch (EntryPointNotFoundException e) {
+            Debug.LogError("Native_OnInit can't be load");
+        }
         InitTexture();
         texturePlaneEmoji.GetComponent<Renderer>().material.mainTexture = mTexEmoji;
         texturePlaneCamera.GetComponent<Renderer>().material.mainTexture = mTexCamera;
@@ -97,6 +101,7 @@ public class UnityGetImageFromCpp : MonoBehaviour
             joints[5] = robot.sliderAngleBody.Value;
         }
 
+        try {
         //Convert Mat to Texture2D
         IntPtr retArrayPtr = Native_OnFixUpdate(mPixelPtrEmoji, mPixelPtrCamera, textureWidth, textureHeight,
             Marshal.UnsafeAddrOfPinnedArrayElement(joints, 0), robot.syncMode == 0);
@@ -123,6 +128,9 @@ public class UnityGetImageFromCpp : MonoBehaviour
                       retJoints[3]+" "+retJoints[4]+" "+retJoints[5]);
         }
 
+        } catch (EntryPointNotFoundException e) {
+        }
+
         //Update the Texture2D with array updated in C++
         mTexEmoji.SetPixels32(mPixel32Emoji);
         mTexEmoji.Apply();
@@ -135,7 +143,12 @@ public class UnityGetImageFromCpp : MonoBehaviour
     {
         mPixelHandleEmoji.Free();
         mPixelHandleCamera.Free();
+
+        try {
         Native_OnExit();
+        } catch (EntryPointNotFoundException e) {
+            Debug.LogError("Native_OnExit can't be load");
+        }
 
         Debug.Log("OnApplicationQuit called");
     }
