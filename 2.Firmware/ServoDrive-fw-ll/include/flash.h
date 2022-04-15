@@ -8,8 +8,8 @@
 #define FLASH_PAGE_TO_ADDR(page)          ((uint32_t)(FLASH_BASE+(FLASH_PAGE_SIZE)*(page)))
 #define ADDR_TO_FLASH_PAGE(addr)          (((addr)-FLASH_BASE)/(FLASH_PAGE_SIZE))
 
-#define FLASH_USER_START_ADDR       0x08008000UL-0x100U // 256B
-#define FLASH_USER_END_ADDR         0x08007FFFUL
+#define FLASH_USER_START_ADDR       0x08004000UL-0x100U // 256B
+#define FLASH_USER_END_ADDR         0x08003FFFUL
 
 
 typedef enum

@@ -46,6 +46,9 @@ void MX_DMA_Init(void)
   /* DMA1_Channel1_IRQn interrupt configuration */
   NVIC_SetPriority(DMA1_Channel1_IRQn, 0);
   NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+    /* DMA1_Channel2_3_IRQn interrupt configuration */
+  NVIC_SetPriority(DMA1_Channel2_3_IRQn, 0);
+  NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);
 
 }
 
