@@ -42,7 +42,8 @@ Hardware文件夹内是ElectronBot里面用到的所有电路的原理图和PCB�
 Firmware中提供了上面所有板子的固件源码，主要包含以下两个工程：
 
 * **ElectronBot-fw**：头部主控板的固件代码，用于驱动圆形屏幕，实现USB-CDC协议的自定义设备，以及进行舵机控制。
-* **ElectronBot-fw**：ServoDrive板子的固件，包含舵机的电位器ADC采样，I2C从机通信和协议解析，电机控制的PWM输出，以及PID闭环算法实现。
+* **ServoDrive-fw**：ServoDrive板子的固件，包含舵机的电位器ADC采样，I2C从机通信和协议解析，电机控制的PWM输出，以及PID闭环算法实现。
+* **ServoDrive-fw-LL**：也是ServoDrive板子的固件，与上面不同的是改用LL库而不是HAL库实现，所以Flash占用会小一些，可以放进16K的MCU，大家根据自己的情况选择需要的固件。
 
 工程都是基于STM32HAL实现的，所以提供了对应的`.ioc`文件，可以自行用STM32CubeMX打开，生成对应的keil或者STM32IDE工程文件。当让也可以像我一样，用CLion进行编译和下载，把CLion变成STM32的IDE的方法参考我之前发的一篇教程：[配置CLion用于STM32开发【优雅の嵌入式开发】](https://zhuanlan.zhihu.com/p/145801160) 。
 
