@@ -21,6 +21,11 @@
 
 > 安装教程可以参考这位[绿荫阿广](https://space.bilibili.com/25228512)同学的安装视频 ：https://www.bilibili.com/video/BV1oY4y1v7oN
 
+**22.4.17更新：**
+
+* 添加语音识别版电子，感谢[jinsonli/ElectronBot-Voice ](https://github.com/jinsonli/ElectronBot-Voice)的分享，演示效果可以看这个视频：[我复刻了电脑配件机器人electronbot【语音版】](https://www.bilibili.com/video/BV18a411v7JS)
+* 视频中演示的舵机调试工具已添加到本仓库
+
 ### 1.项目文件说明 
 
 #### 1.1 Hardware
