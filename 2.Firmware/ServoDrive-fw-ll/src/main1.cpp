@@ -133,6 +133,7 @@ void I2C_SlaveDMARxCpltCallback()
         {
             boardConfig.nodeId = i2cDataRx[1];
             boardConfig.configStatus = CONFIG_COMMIT;
+            set_id(boardConfig.nodeId);
             auto* b = (unsigned char*) &(motor.angle);
             for (int i = 0; i < 4; i++)
                 i2cDataTx[i + 1] = *(b + i);

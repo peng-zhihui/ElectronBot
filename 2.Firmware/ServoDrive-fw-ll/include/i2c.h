@@ -38,6 +38,7 @@ extern uint8_t i2cDataTx[8];
 
 /* USER CODE BEGIN Prototypes */
 void MY_I2C1_Init(uint32_t _id);
+void set_id(uint8_t _id);
 void I2C_SlaveDMARxCpltCallback();
 /* USER CODE END Prototypes */
 

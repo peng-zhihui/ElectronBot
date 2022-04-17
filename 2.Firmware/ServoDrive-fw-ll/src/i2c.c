@@ -126,11 +126,16 @@ void MY_I2C1_Init(uint32_t _id)
     /* USER CODE BEGIN I2C1_Init 2 */
     LL_I2C_Enable(I2C1);
     LL_I2C_EnableIT_ADDR(I2C1);
-
-    LL_I2C_AcknowledgeNextData(I2C1,LL_I2C_ACK);
     LL_I2C_EnableDMAReq_RX(I2C1);
     LL_I2C_EnableDMAReq_TX(I2C1);
     /* USER CODE END I2C1_Init 2 */
+}
+
+void set_id(uint8_t _id)
+{
+    LL_I2C_DisableOwnAddress1(I2C1);
+    LL_I2C_SetOwnAddress1(I2C1,_id,LL_I2C_OWNADDRESS1_7BIT);
+    LL_I2C_EnableOwnAddress1(I2C1);
 }
 /* USER CODE END 1 */
 
