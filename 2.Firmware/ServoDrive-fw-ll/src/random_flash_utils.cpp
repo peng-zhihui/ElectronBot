@@ -48,7 +48,7 @@ extern "C" {
 
 /* Be able to change FLASH_END to use */
 
-#define FLASH_END  FLASH_BANK1_END
+#define FLASH_END  FLASH_USER_END_ADDR// FLASH_BANK1_END
 
 #if !defined(FLASH_END)
 #if defined (STM32F0xx) || defined (STM32F1xx)

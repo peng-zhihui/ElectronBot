@@ -56,7 +56,7 @@ void MX_ADC_Init(void)
 
   LL_DMA_SetChannelPriorityLevel(DMA1, LL_DMA_CHANNEL_1, LL_DMA_PRIORITY_LOW);
 
-  LL_DMA_SetMode(DMA1, LL_DMA_CHANNEL_1, LL_DMA_MODE_CIRCULAR);
+  LL_DMA_SetMode(DMA1, LL_DMA_CHANNEL_1, LL_DMA_MODE_NORMAL);
 
   LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_CHANNEL_1, LL_DMA_PERIPH_NOINCREMENT);
 
@@ -69,8 +69,8 @@ void MX_ADC_Init(void)
   LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,1);
   LL_DMA_SetMemoryAddress(DMA1,LL_DMA_CHANNEL_1,(uint32_t )&adcData);
   LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1,LL_ADC_DMA_REG_REGULAR_DATA));
-
-  LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);  
+  LL_DMA_EnableIT_TC(DMA1,LL_DMA_CHANNEL_1);
+  
   /* ADC interrupt Init */
   NVIC_SetPriority(ADC1_IRQn, 1);
   NVIC_EnableIRQ(ADC1_IRQn);
@@ -91,7 +91,7 @@ void MX_ADC_Init(void)
   ADC_REG_InitStruct.TriggerSource = LL_ADC_REG_TRIG_SOFTWARE;
   ADC_REG_InitStruct.SequencerDiscont = LL_ADC_REG_SEQ_DISCONT_DISABLE;
   ADC_REG_InitStruct.ContinuousMode = LL_ADC_REG_CONV_SINGLE;
-  ADC_REG_InitStruct.DMATransfer = LL_ADC_REG_DMA_TRANSFER_UNLIMITED;
+  ADC_REG_InitStruct.DMATransfer = LL_ADC_REG_DMA_TRANSFER_LIMITED;
   ADC_REG_InitStruct.Overrun = LL_ADC_REG_OVR_DATA_PRESERVED;
   LL_ADC_REG_Init(ADC1, &ADC_REG_InitStruct);
   LL_ADC_REG_SetSequencerScanDirection(ADC1, LL_ADC_REG_SEQ_SCAN_DIR_FORWARD);
@@ -99,7 +99,6 @@ void MX_ADC_Init(void)
   /* USER CODE BEGIN ADC_Init 2 */
     LL_ADC_Enable(ADC1);
     LL_ADC_REG_StartConversion(ADC1);
-    LL_ADC_REG_SetDMATransfer(ADC1,LL_ADC_REG_DMA_TRANSFER_UNLIMITED);
   /* USER CODE END ADC_Init 2 */
 
 }

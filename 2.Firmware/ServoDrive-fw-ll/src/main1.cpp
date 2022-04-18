@@ -10,8 +10,8 @@ BoardConfig_t boardConfig;
 void Main()
 {
     // Read data from Flash
-     EEPROM eeprom;
-     eeprom.get(0, boardConfig);
+    EEPROM eeprom;
+    eeprom.get(0, boardConfig);
     if (boardConfig.configStatus != CONFIG_OK) // use default settings
     {
         boardConfig = BoardConfig_t{
@@ -43,25 +43,17 @@ void Main()
     motor.dce.kd = boardConfig.dceKd;
     motor.dce.setPointPos = boardConfig.initPos;
     motor.SetEnable(boardConfig.enableMotorOnBoot);
-    //motor.SetEnable(true);
-    // // Init PWM
-     //HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);    
-    // HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
-    // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
-    // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 0);
+    // Init PWM
     LL_TIM_EnableCounter(TIM3);
     LL_TIM_CC_EnableChannel(TIM3,LL_TIM_CHANNEL_CH1);
     LL_TIM_CC_EnableChannel(TIM3,LL_TIM_CHANNEL_CH2);
     LL_TIM_OC_SetCompareCH1(TIM3,0);
     LL_TIM_OC_SetCompareCH2(TIM3,0);
 
-    // // Start receive data
+    // Start receive data
     MY_I2C1_Init(boardConfig.nodeId);
     LL_mDelay(10);
-    HAL_I2C_Slave_Receive_IT(&hi2c1, (uint8_t*) i2cDataRx, 5);
-
     // Start control loop at 200Hz
-    //HAL_TIM_Base_Start_IT(&htim14);
     LL_TIM_EnableIT_UPDATE(TIM14);
     LL_TIM_EnableCounter(TIM14);
 
@@ -77,6 +69,8 @@ void Main()
             eeprom.put(0, boardConfig);
             HAL_NVIC_SystemReset();
         }
+    /* for debug */
+       //LL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
     }
 }
 
@@ -89,9 +83,9 @@ void Main()
 
 
 // // Command handler
-void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef* hi2c)
+void I2C_SlaveDMARxCpltCallback()
 {
-    HAL_StatusTypeDef state = HAL_ERROR;
+    ErrorStatus state;
 
     float valF = *((float*) (i2cDataRx + 1));
 
@@ -140,6 +134,7 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef* hi2c)
         {
             boardConfig.nodeId = i2cDataRx[1];
             boardConfig.configStatus = CONFIG_COMMIT;
+            Set_ID(boardConfig.nodeId);
             auto* b = (unsigned char*) &(motor.angle);
             for (int i = 0; i < 4; i++)
                 i2cDataTx[i + 1] = *(b + i);
@@ -209,29 +204,23 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef* hi2c)
             break;
         default:
             break;
-    }
-
-    do
-    {
-        state = HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t*) i2cDataTx, 5, 10000);
         
-    } while (state != HAL_OK);
-
+    }
     do
     {
-        state = HAL_I2C_Slave_Receive_IT(&hi2c1, (uint8_t*) i2cDataRx, 5);
-    } while (state != HAL_OK);
+       state = Slave_Transmit(i2cDataTx,5,5000);
+    } while (state != SUCCESS);
+
 }
 
 
 // Control loop
 void TIM14_PeriodElapsedCallback()
 {
-    //delay_time++;
-    LL_ADC_REG_StartConversion(ADC1);
         // Read sensor data
-      //  HAL_ADC_Start_DMA(&hadc, (uint32_t*) adcData, 1);
-
+    LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);  
+    LL_ADC_REG_StartConversion(ADC1);
+    
     motor.angle = motor.mechanicalAngleMin +
                     (motor.mechanicalAngleMax - motor.mechanicalAngleMin) *
                     ((float) adcData[0] - (float) motor.adcValAtAngleMin) /
