@@ -79,7 +79,9 @@ int main(void)
   /* System interrupt init*/
 
   /* USER CODE BEGIN Init */
-
+  #if (PREFETCH_ENABLE != 0)
+    __HAL_FLASH_PREFETCH_BUFFER_ENABLE();
+  #endif /* PREFETCH_ENABLE */
   /* USER CODE END Init */
 
   /* Configure the system clock */

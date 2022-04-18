@@ -169,14 +169,7 @@ void DMA1_Channel2_3_IRQHandler(void)
         I2C_SlaveDMARxCpltCallback();  
         LL_DMA_DisableChannel(DMA1,LL_DMA_CHANNEL_3);
         LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_3,5);      
-    }
-    else if (LL_DMA_IsActiveFlag_TC2(DMA1))
-    {
-        LL_DMA_ClearFlag_TC2(DMA1);
-        LL_DMA_DisableChannel(DMA1,LL_DMA_CHANNEL_2);    
-        LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_2,5);
-    }
-    
+    }    
   /* USER CODE END DMA1_Channel2_3_IRQn 0 */
 
   /* USER CODE BEGIN DMA1_Channel2_3_IRQn 1 */
@@ -221,13 +214,9 @@ void I2C1_IRQHandler(void)
         if(LL_I2C_GetTransferDirection(I2C1) == LL_I2C_DIRECTION_WRITE)
         {
             LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_3);
+            LL_I2C_ClearFlag_ADDR(I2C1);
         }
-        else
-        { 
-            LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_2);  
-        }
-        /* Clear ADDR flag value in ISR register */
-        LL_I2C_ClearFlag_ADDR(I2C1);
+       
     }
 
   /* USER CODE END I2C1_IRQn 0 */

@@ -77,26 +77,6 @@ void MY_I2C1_Init(uint32_t _id)
   LL_DMA_SetMemoryAddress(DMA1,LL_DMA_CHANNEL_3,(uint32_t)i2cDataRx);
   LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_3,LL_I2C_DMA_GetRegAddr(I2C1,LL_I2C_DMA_REG_DATA_RECEIVE));  
   LL_DMA_EnableIT_TC(DMA1,LL_DMA_CHANNEL_3);
-
-  /* I2C1_TX Init */
-  LL_DMA_SetDataTransferDirection(DMA1, LL_DMA_CHANNEL_2, LL_DMA_DIRECTION_MEMORY_TO_PERIPH);
-
-  LL_DMA_SetChannelPriorityLevel(DMA1, LL_DMA_CHANNEL_2, LL_DMA_PRIORITY_LOW);
-
-  LL_DMA_SetMode(DMA1, LL_DMA_CHANNEL_2, LL_DMA_MODE_NORMAL);
-
-  LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_CHANNEL_2, LL_DMA_PERIPH_NOINCREMENT);
-
-  LL_DMA_SetMemoryIncMode(DMA1, LL_DMA_CHANNEL_2, LL_DMA_MEMORY_INCREMENT);
-
-  LL_DMA_SetPeriphSize(DMA1, LL_DMA_CHANNEL_2, LL_DMA_PDATAALIGN_BYTE);
-
-  LL_DMA_SetMemorySize(DMA1, LL_DMA_CHANNEL_2, LL_DMA_MDATAALIGN_BYTE);
-  LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_2,5);
-  LL_DMA_SetMemoryAddress(DMA1,LL_DMA_CHANNEL_2,(uint32_t)i2cDataTx);
-  LL_DMA_SetPeriphAddress(DMA1,LL_DMA_CHANNEL_2,LL_I2C_DMA_GetRegAddr(I2C1,LL_I2C_DMA_REG_DATA_TRANSMIT));  
-  LL_DMA_EnableIT_TC(DMA1,LL_DMA_CHANNEL_2);
-
   /* Peripheral clock enable */
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_I2C1);
 
@@ -127,15 +107,62 @@ void MY_I2C1_Init(uint32_t _id)
     LL_I2C_Enable(I2C1);
     LL_I2C_EnableIT_ADDR(I2C1);
     LL_I2C_EnableDMAReq_RX(I2C1);
-    LL_I2C_EnableDMAReq_TX(I2C1);
     /* USER CODE END I2C1_Init 2 */
 }
 
-void set_id(uint8_t _id)
+void Set_ID(uint8_t _id)
 {
     LL_I2C_DisableOwnAddress1(I2C1);
     LL_I2C_SetOwnAddress1(I2C1,_id,LL_I2C_OWNADDRESS1_7BIT);
     LL_I2C_EnableOwnAddress1(I2C1);
+}
+
+ErrorStatus Slave_Transmit(uint8_t *pdata,uint16_t size,uint32_t timeout)
+{
+    uint32_t Timeout = timeout;
+    while(!LL_I2C_IsActiveFlag_ADDR(I2C1))
+    {
+    /* Check Systick counter flag to decrement the time-out value */
+        if (LL_SYSTICK_IsActiveCounterFlag()) 
+        {
+            if(Timeout-- == 0)
+            {
+            /* Time-out occurred. return error */
+            return ERROR;
+            }
+        }
+    }
+  /*Clear ADDR flag and loop until end of transfer*/
+  /* Clear ADDR flag value in ISR register */
+    LL_I2C_ClearFlag_ADDR(I2C1);  
+  
+   if(LL_I2C_GetTransferDirection(I2C1) == LL_I2C_DIRECTION_READ)
+   {
+       /* Loop until TXE flag is raised  */
+        while(size > 0)
+        {
+            /* Transmit data (TXE flag raised) **********************************/
+            /* Check TXE flag value in ISR register */
+            if(LL_I2C_IsActiveFlag_TXE(I2C1))
+            {
+            /* Write data in Transmit Data register.
+                TXE flag is cleared by writing data in TXDR register */
+                LL_I2C_TransmitData8(I2C1, (*pdata++));
+                size--;
+                Timeout = timeout;
+            }
+            /* Check Systick counter flag to decrement the time-out value */
+            if (LL_SYSTICK_IsActiveCounterFlag()) 
+            {
+                if(Timeout-- == 0)
+                {
+                    /* Time-out occurred. return error */
+                    return ERROR;
+                }
+            }
+        } 
+   }
+   return SUCCESS;  
 }
 /* USER CODE END 1 */
 

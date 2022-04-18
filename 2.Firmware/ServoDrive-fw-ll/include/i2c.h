@@ -38,7 +38,8 @@ extern uint8_t i2cDataTx[8];
 
 /* USER CODE BEGIN Prototypes */
 void MY_I2C1_Init(uint32_t _id);
-void set_id(uint8_t _id);
+void Set_ID(uint8_t _id);
+ErrorStatus Slave_Transmit(uint8_t *pdata,uint16_t size,uint32_t timeout);
 void I2C_SlaveDMARxCpltCallback();
 /* USER CODE END Prototypes */
 
