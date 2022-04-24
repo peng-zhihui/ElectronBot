@@ -76,12 +76,12 @@ int main(void)
   LL_APB1_GRP2_EnableClock(LL_APB1_GRP2_PERIPH_SYSCFG);
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
 
-  HAL_Init();
-
   /* System interrupt init*/
 
   /* USER CODE BEGIN Init */
-
+  #if (PREFETCH_ENABLE != 0)
+    __HAL_FLASH_PREFETCH_BUFFER_ENABLE();
+  #endif /* PREFETCH_ENABLE */
   /* USER CODE END Init */
 
   /* Configure the system clock */

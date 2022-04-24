@@ -31,21 +31,15 @@ void Motor::SetPwm(int16_t _pwm)
     {
         if (_pwm >= 0)
         {
-            // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
-            // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, _pwm > 1000 ? 1000 : _pwm);
             LL_TIM_OC_SetCompareCH1(TIM3,0);
             LL_TIM_OC_SetCompareCH2(TIM3,_pwm > 1000 ? 1000 : _pwm);
         } else
         {
-            // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 0);
-            // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, _pwm < -1000 ? 1000 : -_pwm);
             LL_TIM_OC_SetCompareCH1(TIM3,_pwm < -1000 ? 1000 : -_pwm);
             LL_TIM_OC_SetCompareCH2(TIM3,0);
         }
     } else
     {
-        // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 0);
-        // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
         LL_TIM_OC_SetCompareCH1(TIM3,0);
         LL_TIM_OC_SetCompareCH2(TIM3,0);
     }
