@@ -2,6 +2,10 @@
 > 本项目是一个桌面级小机器工具人，外观设计的灵感来源是WALL-E里面的EVE~机器人具备USB通信显示画面功能，具备6个自由度（手部roll、pitch，颈部，腰部各一个），使用自己修改的特制舵机支持关节角度回传。
 >
 > 本项目提供了配套的全套开发资料和对应SDK以供二次开发，SDK使用说明见后文。
+>
+> **视频介绍**：[【自制】我做了个能动的 电 脑 配 件！【软核】_哔哩哔哩](https://www.bilibili.com/video/BV1ka411b76m/)
+>
+> **Video** : [I made a cute mini desktop robot ! - YouTube](https://www.youtube.com/watch?v=F29vrvUwqS4)
 
 
 
