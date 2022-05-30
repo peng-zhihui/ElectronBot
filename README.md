@@ -23,7 +23,11 @@
 * 上述预编译文件的源码和固件也在文件夹里有提供，相当于一个最小测试工程，可以自己查看代码进行调试。
 * 注意在6个舵机没有测试验证成功之前，调试代码不要使用舵机收发指令的功能，不然总线会阻塞导致程序卡住，推荐的方式是先单独一个一个功能调试，完成了之后再整合做联调。
 
-> 安装教程可以参考这位[绿荫阿广](https://space.bilibili.com/25228512)同学的安装视频 ：https://www.bilibili.com/video/BV1oY4y1v7oN
+> 安装教程可以参考：
+>
+> [数码甲鱼的简单生活](https://space.bilibili.com/1668139036) 同学的胎教级教程：https://www.bilibili.com/video/BV1sY4y1Y7t6
+>
+> [绿荫阿广](https://space.bilibili.com/25228512)同学的安装视频 ：https://www.bilibili.com/video/BV1oY4y1v7oN
 
 **22.4.17更新：**
 
