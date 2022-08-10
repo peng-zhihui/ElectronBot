@@ -1,0 +1,13 @@
+此示例需要另一个AHK手势识别项目来实现
+https://github.com/dbgba/VisualGestureRecognition
+
+将 "MyAHKScript" 和 "Lib" 以及 "ElectronBotSDK" 文件夹，放在与"VisualGestureRecognition.ahk"同一目录下，并覆盖替换已存在的文件后，再重新启动VisualGestureRecognition并开启手势识别即可使用。
+
+手势识别设置建议参考截图 "推荐手势设置.jpg" 设置。
+
+示例预设演示同步动作有：
+双手放下时、单手举起握拳时、单手举起做剪刀手时、双手举起握拳时。
+摄像头识别到上述手势后，ElectronBot也会同步反应。当双手举起握拳时，会执行一套预设的长动作。
+
+
+PS：此示例用的是不断识别后以新进程的方式连接并驱动ElectronBot。此方式仅适合演示之用，要稳定使用还是得把流程写到一个脚本进程里更合适一些。
