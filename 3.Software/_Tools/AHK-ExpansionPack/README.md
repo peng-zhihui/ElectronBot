@@ -9,6 +9,7 @@
 * 安装好AutoHotkey后，就可以对.ahk文件右键选Edit Script来编辑脚本了。项目所有示例中我只保留适配与ElectronBot相关的代码，而实际使用中我们可以使用AHK自身对电脑状态的判断和调用来实现很多的功能。
 * 例如：判断时间来设置电脑音量、当ElectronBot做姿势后，同时播报自定义语音、判断进程状态，决定开关某程序等等。需要根据自身情况查看[AHK中文帮助文档](https://www.autoahk.com/help/autohotkey/zh-cn/docs/commands/WinActive.htm)或使用对应函数类库做具体实现。
 
+　
 
 每个文件夹的示例中都附带了详细截图与代码注释，以下仅做一些简单的介绍。
 
@@ -16,6 +17,7 @@
 
 调用Accessible(无障碍)获取指定联系人的信息做为控制信号，即可实现比如：收到ElectronBot姿势参数后，调用SDK完成动作。
 
+　
 
 **2.对智能家居的控制**
 
