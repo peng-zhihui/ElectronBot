@@ -21,10 +21,7 @@ Server.LoadMimes("mime.types")
 Server.SetPaths(paths)
 HTTP服务端口 := 8866
 Server.Serve(HTTP服务端口)
-Run "http://localhost:%HTTP服务端口%/" ; 启动脚本后打开控制台网页【这句可删除】
-
- ; 运行时会将局域网ip和端口一并保存到剪贴板中，方便自己打开或发送【外网访问需要公网IP或内网穿透】
-Tip((Clipboard := "http://"A_IPAddress1 ":" HTTP服务端口) "`n已存入剪贴板" (A_IPAddress2="0.0.0.0" ? "" : "`n`nhttp://" A_IPAddress2 ":" HTTP服务端口) (A_IPAddress3="0.0.0.0" ? "" : "`n`nhttp://" A_IPAddress3 ":" HTTP服务端口) (A_IPAddress4="0.0.0.0" ? "" : "`n`nhttp://" A_IPAddress4 ":" HTTP服务端口))
+Run "http://127.0.0.1:%HTTP服务端口%/" ; 启动脚本后打开控制台网页【这句可删除】
 Return
 
 
@@ -67,11 +64,10 @@ Return
 ; AHK网页控制台：https://github.com/dbgba/HTTPRemoteConsole
 ; 网页控制台的主页面显示
 主界面(ByRef req, ByRef res) {
-    Global
     主界面网页源码 =
     (LTrim
         <html><head><meta charset="UTF-8"><head><meta name="viewport" content="width=device-width">
-        <title>NAS控制台</title>
+        <title>ElectronBot网页控制台</title>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'><style type="text/css">
         html {font-family: Ubuntu;}
         body {margin:25px;margin-top:5px;}
@@ -79,7 +75,7 @@ Return
         h5 {font-size: 16px;color:teal;}
         </style></head></html>
         <div id="wb_Text10" style="position:absolute;left:169px;top:10px;width:73px;height:18px;text-align:center;z-index:26;">
-            <span style="color:#000000;font-family:微软雅黑;font-size:17px;"><strong>进程状态</strong></span>
+            <span style="color:#000000;font-family:微软雅黑;font-size:17px;"><strong>简单演示</strong></span>
         </div>
         <hr id="Line2" style="position:absolute;left:19px;top:14px;width:136px;z-index:27;">
         <hr id="Line3" style="position:absolute;left:256px;top:14px;width:135px;z-index:28;">
@@ -269,6 +265,7 @@ Class PlayerSDK {
 }
 
 
+; https://www.autohotkey.com/boards/viewtopic.php?t=4890
 ; https://github.com/Skiouros/AHKhttp/blob/master/AHKhttp.ahk
 class Uri
 {
