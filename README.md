@@ -5,7 +5,7 @@
 >
 > **视频介绍**：[【自制】我做了个能动的 电 脑 配 件！【软核】_哔哩哔哩](https://www.bilibili.com/video/BV1ka411b76m/)
 >
-> **Video** : [I made a cute mini desktop robot ! - YouTube](https://www.youtube.com/watch?v=F29vrvUwqS4)
+> **Video** : [I made a cute mini desktop robot ! - YouTube](https://www.youtube.com/watch?v=FmKTiH5Lca4)
 
 
 
