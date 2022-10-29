@@ -11,6 +11,8 @@
 <a href="https://github.com/peng-zhihui/ElectronBot/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/peng-zhihui/ElectronBot?color=2b9348"></a>
 <a href="https://github.com/peng-zhihui/ElectronBot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/peng-zhihui/ElectronBot?color=2b9348" alt="License Badge"/></a>
 
+<a href="https://github.com/peng-zhihui/ElectronBot"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Chinese 中文自述文件&color=%230076D6&style=flat&logo=google-chrome&logoColor=green" alt="website"/></a>
+
 <a href="https://www.youtube.com/watch?v=FmKTiH5Lca4"><img src="https://img.shields.io/youtube/views/FmKTiH5Lca4?style=social" alt="YouTube Video Views"/></a>
 <a href="https://www.youtube.com/channel/UCBAdGeil51Iw4y29Sh9Y7hA"><img src="https://img.shields.io/youtube/channel/subscribers/UCBAdGeil51Iw4y29Sh9Y7hA?style=social" alt="YouTube Channel Subscribers"/></a>
   
