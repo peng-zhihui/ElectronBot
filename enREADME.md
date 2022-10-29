@@ -1,6 +1,29 @@
-# ElectronBot: Mini Desktop Robot
-> This project is a desktop-level small robot tool. The inspiration for the appearance design is the EVE~ robot in WALL-E, which has the function of USB communication and display screen, and has 6 degrees of freedom (roll, pitch, neck, waist, etc.). A), use your own modified special servo to support joint angle return.
->
+<h1 align="center">ElectronBot: Mini Desktop Robot</h1>
+<div align="center">
+
+
+<i>This project is a desktop-level small robot tool. The inspiration for the appearance design is the EVE~ robot in WALL-E, which has the function of USB communication and display screen, and has 6 degrees of freedom (roll, pitch, neck, waist, etc.). A), use your own modified special servo to support joint angle return.</i>
+
+<a href="https://github.com/peng-zhihui/ElectronBot/stargazers"><img src="https://img.shields.io/github/stars/peng-zhihui/ElectronBot" alt="Stars Badge"/></a>
+<a href="https://github.com/peng-zhihui/ElectronBot/network/members"><img src="https://img.shields.io/github/forks/peng-zhihui/ElectronBot" alt="Forks Badge"/></a>
+<a href="https://github.com/peng-zhihui/ElectronBot/pulls"><img src="https://img.shields.io/github/issues-pr/peng-zhihui/ElectronBot" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/peng-zhihui/ElectronBot/issues"><img src="https://img.shields.io/github/issues/peng-zhihui/ElectronBot" alt="Issues Badge"/></a>
+<a href="https://github.com/peng-zhihui/ElectronBot/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/peng-zhihui/ElectronBot?color=2b9348"></a>
+<a href="https://github.com/peng-zhihui/ElectronBot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/peng-zhihui/ElectronBot?color=2b9348" alt="License Badge"/></a>
+
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
+<a href="https://www.youtube.com/channel/UCBAdGeil51Iw4y29Sh9Y7hA"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=website&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<!-- <img src="http://hits.dwyl.com/peng-zhihui/ElectronBot.svg" alt="Hits Badge"/> -->
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+<br>
+<i>Loved the project? Please consider giving a Star ⭐️ to help it improve!</i>
+
+</div>
+
+
+
+---
+
 > This project provides a complete set of development materials and corresponding SDK for secondary development. Please refer to the following for SDK usage instructions.
 >
 > **Video introduction**: [[Homemade] I made an active computer accessory! [Soft Core]_bilibili](https://www.bilibili.com/video/BV1ka411b76m/)
