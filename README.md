@@ -48,9 +48,10 @@
 
 > 安装教程可以参考：
 >
-> [数码甲鱼的简单生活](https://space.bilibili.com/1668139036) 同学的胎教级教程：https://www.bilibili.com/video/BV1sY4y1Y7t6
+> [数码甲鱼的简单生活](https://space.bilibili.com/1668139036) 同学的胎教级教程：[复刻稚晖君ElectronBot胎教级教程之焊接篇（显微镜高清实操）
+](https://www.bilibili.com/video/BV1sY4y1Y7t6)
 >
-> [绿荫阿广](https://space.bilibili.com/25228512)同学的安装视频 ：https://www.bilibili.com/video/BV1oY4y1v7oN
+> [绿荫阿广](https://space.bilibili.com/25228512)同学的安装视频 ：[稚晖君ElectronBot组装视频（非调试视频）](https://www.bilibili.com/video/BV1oY4y1v7oN)
 
 **22.4.17更新：**
 
