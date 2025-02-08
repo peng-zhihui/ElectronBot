@@ -233,7 +233,7 @@ SDK架构设计如图：
 
 ### 有的问题在Issues里面已经解答了，问问题之前先翻一下open/closed的Issues。
 
-
+B站网友的视频教程：[](https://space.bilibili.com/25228512)
 
 > 感谢以下项目：
 >
@@ -243,5 +243,4 @@ SDK架构设计如图：
 >
 > [Lexikos/AutoHotkey_L: AutoHotkey - macro-creation and automation-oriented scripting utility for Windows. (github.com)](https://github.com/Lexikos/AutoHotkey_L)
 >
-> https://blog.csdn.net/pq8888168/article/details/85781908
 
